@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To the moon - Поиск</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/svg/LogoDark.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <aside class="nav-bar" id="nav-bar">
+      <button class="switcher" id="toggle-menu-btn">
+        <img src="/assets/svg/ArrowSlider.svg" alt="" />
+      </button>
+      <div id="nav-header">
+        <div>
+          <button class="burger-menu" id="close-burger-menu-btn">
+            <img
+              src="/assets/svg/close-burger-menu.svg"
+              alt="Menu"
+              id="burger-icon"
+            />
+          </button>
+        </div>
+        <a class="main-logotype" href="/">
+          <img src="/assets/svg/LogoDark.svg" alt="logo" />
+        </a>
+      </div>
+      <div id="nav-content">
+        <div class="nav-content__column">
+          <div
+            class="nav-button"
+            onclick="toggleDropdown('dropdown-menu-1', this)"
+          >
+            <div class="nav-button__right">
+              <img src="/assets/svg/Sidebar/AllGame.svg" alt="Chat" />
+              <span>Все игры</span>
+            </div>
+            <img
+              class="dropdown-arrow"
+              src="/assets/svg/DropdownArrow.svg"
+              alt="DropdownArrow"
+            />
+          </div>
+          <ul id="dropdown-menu-1" class="dropdown-menu">
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/TopGame.svg"
+                  alt=""
+                />
+                Топ игр</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/NewGame.svg"
+                  alt=""
+                />
+                Новые игры</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Slots.svg"
+                  alt=""
+                />
+                Слоты</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/LiveCasino.svg"
+                  alt=""
+                />
+                Live</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Roullete.svg"
+                  alt=""
+                />
+                Roulette</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Crash.svg"
+                  alt=""
+                />
+                Crash</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Card.svg"
+                  alt=""
+                />
+                Card</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Lotto.svg"
+                  alt=""
+                />
+                Lotto</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Arcade.svg"
+                  alt=""
+                />
+                Arcade</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/VSport.svg"
+                  alt=""
+                />
+                VSport</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav-content__column">
+          <div
+            class="nav-button"
+            onclick="toggleDropdown('dropdown-menu-2', this)"
+          >
+            <div class="nav-button__right">
+              <img src="/assets/svg/Sidebar/LiveGame.svg" alt="Chat" />
+              <span>Живые игры</span>
+            </div>
+            <img
+              class="dropdown-arrow"
+              src="/assets/svg/DropdownArrow.svg"
+              alt="DropdownArrow"
+            />
+          </div>
+          <ul id="dropdown-menu-2" class="dropdown-menu">
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Baccarat.svg"
+                  alt=""
+                />
+                Baccarat</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Roullete.svg"
+                  alt=""
+                />
+                Рулетка</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Poker.svg"
+                  alt=""
+                />
+                Покер</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav-content__column">
+          <div
+            class="nav-button"
+            onclick="toggleDropdown('dropdown-menu-3', this)"
+          >
+            <div class="nav-button__right">
+              <img
+                src="/assets/svg/Sidebar/Dropdown Menu/Jackpot.svg"
+                alt="Jackpot"
+              />
+              <span>Джекпот игры</span>
+            </div>
+            <img
+              class="dropdown-arrow"
+              src="/assets/svg/DropdownArrow.svg"
+              alt="DropdownArrow"
+            />
+          </div>
+          <ul id="dropdown-menu-3" class="dropdown-menu">
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/AllJackpotGame.svg"
+                  alt=""
+                />
+                Все джекпот игры</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Mars.svg"
+                  alt=""
+                />
+                Mars</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Yupiter.svg"
+                  alt=""
+                />
+                Yupiter</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="svg-icon"
+                  src="/assets/svg/Sidebar/Dropdown Menu/Moon.svg"
+                  alt=""
+                />
+                Moon</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Джекпот"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Sidebar/Jackpot.svg" alt="Chat" />
+            <span>Джекпот</span>
+          </div>
+        </a>
+        <a
+          href="bonuses.html"
+          data-tooltip="right 150"
+          aria-label="Промо"
+          class="nav-button"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Sidebar/Promo.svg" alt="Chat" />
+            <span>Промо</span>
+            <div class="nav-button__promo">
+              <p class="nav-button__promo-counter">7</p>
+            </div>
+          </div>
+        </a>
+        <a
+          href="promo.html"
+          data-tooltip="right 150"
+          aria-label="Программа лояльности"
+          class="nav-button"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Sidebar/Loyalty.svg" alt="Chat" />
+            <span>Программа лояльности</span>
+          </div>
+        </a>
+        <a
+          href="vip-program.html"
+          data-tooltip="right 150"
+          aria-label="VIP программа"
+          class="nav-button"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Sidebar/VIP.svg" alt="Chat" />
+            <span>VIP программа</span>
+          </div>
+        </a>
+        <div data-tooltip="right 150" aria-label="Live чат" class="nav-button">
+          <div class="nav-button__right">
+            <img src="/assets/svg/Sidebar/Chat.svg" alt="Chat" />
+            <span>Live чат</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="nav-jackpot">
+        <img
+          src="/assets/images/JackpotTitle.png"
+          alt="JackpotTitle"
+          class="nav-jackpot__title"
+        />
+        <div class="nav-jackpot__box">
+          <p class="nav-jackpot__box-title">LEADER</p>
+          <p class="nav-jackpot__box-money">€ 7913,4</p>
+          <p class="nav-jackpot__box-maxbet">
+            draws between <span>€35000 and €45000</span>
+          </p>
+        </div>
+      </a>
+      <div class="nav-app">
+        <p class="nav-app__title">Установить приложение</p>
+        <button class="nav-app__button">
+          <img src="/assets/svg/Sidebar/DownloadApp.svg" alt="DownloadApp" />
+        </button>
+      </div>
+      <div class="dropdown nav-dropdown">
+        <button class="dropdown header__top-language">
+          <div class="header__top-language_left">
+            <img src="/assets/flags/RU.svg" alt="" />Ru
+          </div>
+          <img
+            class="footer-top__language-arrow"
+            src="/assets/svg/DropdownArrow.svg"
+            alt=""
+          />
+        </button>
+        <div id="dropdowntest" class="header__drop dropdown-drop">
+          <button href="#cards" class="dropdown-drop__item header__drop-item">
+            <img src="/assets/flags/KZ.svg" alt="" />Kz
+          </button>
+          <button href="#cards" class="dropdown-drop__item">
+            <img src="/assets/flags/AZ.svg" alt="" />Az
+          </button>
+        </div>
+      </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <main id="main">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__content">
+            <a href="#" class="header__content-left">
+              <img src="/assets/svg/LogoDark.svg" alt="Logo" />
+            </a>
+            <div class="header__content-right">
+              <div class="dropdown header__dropdown">
+                <button class="dropdown header__top-language">
+                  <div class="header__top-language_left">
+                    <img src="/assets/flags/RU.svg" alt="" />
+                  </div>
+                  <img
+                    class="footer-top__language-arrow"
+                    src="/assets/svg/DropdownArrow.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="dropdowntest" class="header__drop dropdown-drop">
+                  <button
+                    href="#cards"
+                    class="dropdown-drop__item header__drop-item"
+                  >
+                    <img src="/assets/flags/KZ.svg" alt="" />Kz
+                  </button>
+                  <button href="#cards" class="dropdown-drop__item">
+                    <img src="/assets/flags/AZ.svg" alt="" />Az
+                  </button>
+                </div>
+              </div>
+              <button class="game__tag-close-button">✕</button>
+              <div class="header__content-buttons">
+                <button
+                  data-modal-open="modal3"
+                  class="header__content-button"
+                  id="openAuthModal"
+                >
+                  <img src="/assets/svg/Login.svg" alt="" />Вход
+                </button>
+                <button
+                  id="openRegModal"
+                  data-modal-open="modal3"
+                  class="header__content-button"
+                >
+                  <img src="/assets/svg/Registration.svg" alt="" />Регистрация
+                </button>
+                <button class="burger-menu" id="burger-menu-btn">
+                  <img
+                    src="/assets/svg/burger-menu.svg"
+                    alt="Menu"
+                    id="burger-icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="game">
+        <div class="game__wrapper">
+          <div class="game__content">
+            <div class="game__tag">
+              <div class="game__tag-left">
+                <span class="game__tag-text">Big Bass Mission Fishin'</span>
+                <span class="game__tag-provider">Pragmatic Play</span>
+              </div>
+              <button class="game__tag-close-button">✕</button>
+            </div>
+            <div class="game__canvas">
+              <img src="/assets/images/Canvas.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Modal Search -->
+      <div id="modal1" class="modal">
+        <div id="modalContent1" class="modal-search modal-content">
+          <div class="modal__content-top">
+            <div class="modal__content-top_title">
+              <h2 class="modal-content__title">Поиск</h2>
+              <button
+                id="modalClose1"
+                class="modal__buttons modal-content__close"
+              >
+                <img src="/assets/svg/Modal/CloseModal.svg" alt="" />
+              </button>
+            </div>
+            <div class="input">
+              <div class="input__wrapper">
+                <span class="input__icon">
+                  <img
+                    src="/assets/svg/Components/SearchInput.svg"
+                    alt="SearchInput"
+                  />
+                </span>
+                <input
+                  type="text"
+                  id="provider-input"
+                  class="input__field"
+                  placeholder="Название провайдера"
+                />
+                <label class="input__label" for="provider-input"
+                  >Название провайдера</label
+                >
+              </div>
+              <p class="input__error-message">
+                Ошибка: Имя должно содержать не менее 3 символов
+              </p>
+            </div>
+          </div>
+          <div class="modal__content-providers">
+            <h3 class="modal__content-providers_title">
+              <img src="/assets/svg/Modal/Providers.svg" alt="Providers" />
+              Провайдеры
+            </h3>
+            <div class="swiper-container7 modal__content-providers_list">
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide modal__content-providers_item">
+                  <img src="/assets/images/Pragmatic.png" alt="" />
+                </a>
+                <a href="#" class="swiper-slide modal__content-providers_item">
+                  <img src="/assets/images/Pragmatic.png" alt="" />
+                </a>
+                <a href="#" class="swiper-slide modal__content-providers_item">
+                  <img src="/assets/images/Pragmatic.png" alt="" />
+                </a>
+                <a href="#" class="swiper-slide modal__content-providers_item">
+                  <img src="/assets/images/Pragmatic.png" alt="" />
+                </a>
+                <a href="#" class="swiper-slide modal__content-providers_item">
+                  <img src="/assets/images/Pragmatic.png" alt="" />
+                </a>
+                <a href="#" class="swiper-slide modal__content-providers_item">
+                  <img src="/assets/images/Pragmatic.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal__content-slots">
+            <h3 class="modal__content-slots_title">
+              <img src="/assets/svg/Modal/FireGame.svg" alt="FireGame" />
+              Горячие игры
+            </h3>
+            <div class="modal__content-slots_list">
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+              <section class="slot-machine">
+                <div class="slot-machine__image-container">
+                  <picture class="slot-machine__compresed">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                  </picture>
+                  <div class="slot-machine__hover-overlay">
+                    <p class="slot-machine__developer">Pragmatic Play</p>
+                    <button
+                      class="slot-machine__button slot-machine__button--play"
+                    >
+                      <img src="/assets/images/PlayButton.png" alt="Play" />
+                    </button>
+                    <button
+                      class="slot-machine__button slot-machine__button--demo"
+                    >
+                      Демо
+                    </button>
+                  </div>
+                </div>
+                <div class="slot-machine__footer">
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div id="modalBackdrop1" class="modal-overlay"></div>
+      </div>
+      <!-- Modal Providers -->
+      <div id="modal2" class="modal">
+        <div id="modalContent1" class="modal-content providers-content">
+          <button
+            id="modalClose2"
+            class="modal-content__close close__fixed modal__close"
+          >
+            <img src="/assets/svg/Modal/CloseModal.svg" alt="" />
+          </button>
+          <div class="providers__content-left">
+            <div class="provider__content-left_top">
+              <div class="provider__content-left-title">
+                <h2 class="providers__content-title">Провайдеры</h2>
+                <button
+                  id="modalClose3"
+                  class="modal__buttons modal-content__close"
+                >
+                  <img src="/assets/svg/Modal/CloseModal.svg" alt="" />
+                </button>
+              </div>
+              <div class="providers__content-tabs">
+                <div>
+                  <div
+                    class="providers__content-tab providers__content-tab--active"
+                  >
+                    <div class="glowing-bar"></div>
+                    Слоты
+                  </div>
+                  <div class="providers__content-tab">
+                    <div class="glowing-bar"></div>
+                    Live казино
+                  </div>
+                  <div class="providers__content-tab">
+                    <div class="glowing-bar"></div>
+                    Быстрые
+                  </div>
+                  <div class="providers__content-tab">
+                    <div class="glowing-bar"></div>
+                    Настольные
+                  </div>
+                  <div class="providers__content-tab">
+                    <div class="glowing-bar"></div>
+                    Лотерея
+                  </div>
+                  <div class="providers__content-tab">
+                    <div class="glowing-bar"></div>
+                    B-спорт
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="provider__content-left_bottom">
+              <h3 class="providers__content-bottom_title">Рекомендуем</h3>
+              <div class="providers__content-bottom_slots">
+                <a class="slot-machine providers__content-bottom_width">
+                  <div class="slot-machine__image-container">
+                    <img
+                      class="slot-machine__image"
+                      src="/assets/images/Slot Image.png"
+                      alt="Gates of Olympus 1000"
+                    />
+                    <div class="slot-machine__hover-overlay">
+                      <p class="slot-machine__developer">Pragmatic Play</p>
+                      <button
+                        class="slot-machine__button slot-machine__button--play"
+                      >
+                        <img src="/assets/images/PlayButton.png" alt="Play" />
+                      </button>
+                      <button
+                        class="slot-machine__button slot-machine__button--demo"
+                      >
+                        Демо
+                      </button>
+                    </div>
+                  </div>
+                  <h3 class="slot-machine__title">Gates of Olympus 1000</h3>
+                </a>
+              </div>
+              <button class="providers__content-bottom_button">Играть</button>
+            </div>
+          </div>
+          <div class="providers__content-right">
+            <div class="providers__content-right__top">
+              <h3 class="modal__content-providers_title">
+                <img src="/assets/svg/Modal/Providers.svg" alt="Providers" />
+                Категории
+              </h3>
+              <div class="providers__content-right-tabs">
+                <button
+                  class="providers__content-right-tab providers__content-right-tab--active"
+                >
+                  <img src="/assets/svg/Modal/Cashback.svg" alt="" />
+                  Кешбэк
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/New.svg" alt="" />
+                  Новые
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/HotGames.svg" alt="" />
+                  Горячие
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/BuyBonus.svg" alt="" />
+                  Купи Бонус
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/AGT.svg" alt="" />
+                  AGT
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/DropsWins.svg" alt="" />
+                  Drops & Wins
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/MegaWays.svg" alt="" />
+                  Megaways
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/Fruits.svg" alt="" />
+                  Фрукты
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/Jackpot.svg" alt="" />
+                  Джекпот
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/Tournaments.svg" alt="" />
+                  Турнирные
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/Lotomatic.svg" alt="" />
+                  Lotomatic
+                </button>
+                <button class="providers__content-right-tab">
+                  <img src="/assets/svg/Modal/Book.svg" alt="" />
+                  Книги
+                </button>
+              </div>
+            </div>
+            <div class="providers__content-right__bottom">
+              <div class="providers__content-right__bottom-top">
+                <h3 class="modal__content-providers_title">
+                  <img src="/assets/svg/Modal/Providers.svg" alt="Providers" />
+                  Провайдеры
+                </h3>
+                <div class="dropdown-sort">
+                  По умолчанию
+                  <img src="/assets/svg/Modal/DropdownSort.svg" alt="" />
+                </div>
+              </div>
+              <div class="input">
+                <div class="input__wrapper">
+                  <span class="input__icon">
+                    <img
+                      src="/assets/svg/Components/SearchInput.svg"
+                      alt="SearchInput"
+                    />
+                  </span>
+                  <input
+                    type="text"
+                    id="provider-input"
+                    class="input__field"
+                    placeholder="Название провайдера"
+                  />
+                  <label class="input__label" for="provider-input"
+                    >Название провайдера</label
+                  >
+                </div>
+                <p class="input__error-message">
+                  Ошибка: Имя должно содержать не менее 3 символов
+                </p>
+              </div>
+              <div class="providers__content-right-providers">
+                <button
+                  class="providers__content-right-provider"
+                  id="providerButton"
+                >
+                  <img src="/assets/images/Pragmatic.png" alt="Pragmatic" />
+                </button>
+              </div>
+            </div>
+            <div class="providers__content-right__buttons">
+              <div class="providers__content-right__absolute">
+                <button class="providers__content-right__showgames">
+                  Показать игры
+                </button>
+                <button class="providers__content-right__reset">
+                  Сбросить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalBackdrop1" class="modal-overlay"></div>
+      </div>
+      <!-- Modal Reg -->
+      <div id="modal3" class="modal">
+        <div
+          id="modalContent1"
+          class="registration-content modal-hidden modal-show"
+        >
+          <button id="modalClose1" class="modal__reg modal-content__close">
+            <img src="/assets/svg/Modal/CloseModal.svg" alt="" />
+          </button>
+          <div class="registration__body">
+            <div class="form-container">
+              <div class="form-container__tabs">
+                <div
+                  id="registerTab"
+                  class="form-container__tab form-container__tab--active"
+                >
+                  Регистрация
+                </div>
+                <div id="loginTab" class="form-container__tab">Авторизация</div>
+              </div>
+              <form id="registrationForm" class="form">
+                <div class="input">
+                  <div class="input__wrapper">
+                    <span class="input__icon">
+                      <img
+                        src="/assets/svg/Modal/Email.svg"
+                        alt="SearchInput"
+                      />
+                    </span>
+                    <input
+                      type="text"
+                      id="provider-input"
+                      class="input__field reg__field"
+                      placeholder="Ваша почта"
+                    />
+                    <label class="input__label" for="provider-input"
+                      >Ваша почта</label
+                    >
+                  </div>
+                  <p class="input__error-message">
+                    Ошибка: Почта должно содержать не менее 3 символов
+                  </p>
+                </div>
+                <div class="input">
+                  <div class="input__wrapper">
+                    <span class="input__icon">
+                      <img
+                        src="/assets/svg/Modal/PasswordMinimalist.svg"
+                        alt="PasswordMinimalist"
+                      />
+                    </span>
+                    <input
+                      type="text"
+                      id="provider-input"
+                      class="input__field reg__field"
+                      placeholder="Ваш пароль"
+                    />
+                    <label class="input__label" for="provider-input"
+                      >Ваш пароль</label
+                    >
+                    <button
+                      type="button"
+                      class="password-toggle input-right__icon"
+                    >
+                      <img
+                        src="/assets/svg/Modal/ShowPassword.svg"
+                        alt="ShowPassword"
+                      />
+                    </button>
+                  </div>
+                  <p class="input__error-message">
+                    Ошибка: Почта должно содержать не менее 3 символов
+                  </p>
+                </div>
+                <div class="reg__dropdown">
+                  <div class="dropdown reg__dropdown-languange">
+                    <button class="dropdown reg-top__language">
+                      <div class="reg-top__language-left">
+                        <img src="/assets/flags/RU.svg" alt="" />Ru
+                      </div>
+                      <img
+                        class="footer-top__language-arrow"
+                        src="/assets/svg/DropdownArrow.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div id="dropdownreg" class="dropdown-drop reg_dropdown">
+                      <button
+                        href="#cards"
+                        class="dropdown-drop__item reg_dropdown-item"
+                      >
+                        <img src="/assets/flags/KZ.svg" alt="" />Kz
+                      </button>
+                      <button
+                        href="#cards"
+                        class="dropdown-drop__item reg_dropdown-item"
+                      >
+                        <img src="/assets/flags/AZ.svg" alt="" />Kz
+                      </button>
+                    </div>
+                  </div>
+                  <div class="dropdown reg__dropdown-currency">
+                    <button class="dropdown reg-top__language">
+                      <div class="reg-top__language-left">
+                        <img
+                          src="/assets/svg/Modal/Currency.svg"
+                          alt=""
+                        />Валюта
+                      </div>
+                      <img
+                        class="footer-top__language-arrow"
+                        src="/assets/svg/DropdownArrow.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div id="dropdownfooter" class="dropdown-drop reg_dropdown">
+                      <button
+                        href="#cards"
+                        class="dropdown-drop__item reg_dropdown-item"
+                      >
+                        <img src="/assets/svg/Language/English.svg" alt="" />USD
+                      </button>
+                      <button
+                        href="#cards"
+                        class="dropdown-drop__item reg_dropdown-item"
+                      >
+                        <img src="/assets/svg/Language/English.svg" alt="" />BYN
+                      </button>
+                      <button
+                        href="#cards"
+                        class="dropdown-drop__item reg_dropdown-item"
+                      >
+                        <img src="/assets/svg/Language/English.svg" alt="" />RUB
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="terms">
+                  <div class="age-consent-checkbox">
+                    <input type="checkbox" id="ageConsent" required />
+                    <label class="age-consent-style" for="ageConsent">
+                      Я старше 18 лет и принимаю:
+                      <a
+                        class="age-consent-style__link"
+                        href="#"
+                        target="_blank"
+                        >Положения и условия</a
+                      >,
+                      <a
+                        class="age-consent-style__link"
+                        href="#"
+                        target="_blank"
+                        >Политику конфиденциальности</a
+                      >, а также даю согласие на обработку персональных данных.
+                    </label>
+                  </div>
+                  <div class="age-consent-style discount-reg">
+                    <input
+                      type="checkbox"
+                      id="discountFromToTheMoon"
+                      required
+                    />
+                    <label for="discountFromToTheMoon">
+                      Получайте эксклюзивные предложения и акции от казино 💰
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="submit-button">
+                  Зарегистрироваться
+                </button>
+                <div class="reg__divider-bottom">
+                  <span class="divider-line"></span>
+                  <span class="divider-text">Или</span>
+                  <span class="divider-line"></span>
+                </div>
+                <button class="telegram-login" type="button">
+                  <img src="/assets/svg/Modal/Telegram.svg" alt="" />Login with
+                  Telegram
+                </button>
+              </form>
+              <form id="loginForm" style="display: none" class="form">
+                <div class="input">
+                  <div class="input__wrapper">
+                    <span class="input__icon">
+                      <img
+                        src="/assets/svg/Modal/Email.svg"
+                        alt="SearchInput"
+                      />
+                    </span>
+                    <input
+                      type="text"
+                      id="provider-input"
+                      class="input__field reg__field"
+                      placeholder="Ваша почта"
+                    />
+                    <label class="input__label" for="provider-input"
+                      >Ваша почта</label
+                    >
+                  </div>
+                  <p class="input__error-message">
+                    Ошибка: Почта должно содержать не менее 3 символов
+                  </p>
+                </div>
+                <div class="input">
+                  <div class="input__wrapper">
+                    <span class="input__icon">
+                      <img
+                        src="/assets/svg/Modal/PasswordMinimalist.svg"
+                        alt="PasswordMinimalist"
+                      />
+                    </span>
+                    <input
+                      type="text"
+                      id="provider-input"
+                      class="input__field reg__field"
+                      placeholder="Ваш пароль"
+                    />
+                    <label class="input__label" for="provider-input"
+                      >Ваш пароль</label
+                    >
+                    <button
+                      type="button"
+                      class="password-toggle input-right__icon"
+                    >
+                      <img
+                        src="/assets/svg/Modal/ShowPassword.svg"
+                        alt="ShowPassword"
+                      />
+                    </button>
+                  </div>
+                  <p class="input__message">Забыли пароль?</p>
+                </div>
+                <a href="/personal-account.html" class="login-button">Вход</a>
+                <div class="reg__divider-bottom">
+                  <span class="divider-line"></span>
+                  <span class="divider-text">Или</span>
+                  <span class="divider-line"></span>
+                </div>
+                <button class="telegram-login" type="button">
+                  <img src="/assets/svg/Modal/Telegram.svg" alt="" />Login with
+                  Telegram
+                </button>
+              </form>
+            </div>
+            <div class="image-container">
+              <img src="/assets/images/Registration.png" alt="Registration" />
+              <div class="image-text">
+                <p class="image-top">Приветственный бонус</p>
+                <p class="image-bottom">
+                  Получите до <span>€3000 с 210% + 300 FS</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalBackdrop1" class="modal-overlay"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <div class="footer-top">
+            <img src="/assets/svg/LogoDark.svg" class="footer-top__logo" />
+            <div class="footer-top__text">
+              <div>
+                <a href="/privacy-policy.html">Privacy policy</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Rakoo Casino</a>
+                <a href="#">Jackpot Terms and Conditions</a>
+                <a href="#">Affiliate Program</a>
+              </div>
+              <div>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Responsible Gaming</a>
+                <a href="#">Bonus Terms and Conditions</a>
+                <a href="#">Faq</a>
+              </div>
+            </div>
+            <div class="footer-top__right">
+              <div class="dropdown">
+                <button class="dropdown footer-top__language">
+                  <div class="footer-top__language-left">
+                    <img src="/assets/flags/RU.svg" alt="" />Ru
+                  </div>
+                  <img
+                    class="footer-top__language-arrow"
+                    src="/assets/svg/DropdownArrow.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="dropdownfooter" class="dropdown-drop">
+                  <button href="#cards" class="dropdown-drop__item">
+                    <img src="/assets/flags/KZ.svg" alt="" />Kz
+                  </button>
+                  <button href="#cards" class="dropdown-drop__item">
+                    <img src="/assets/flags/AZ.svg" alt="" />Az
+                  </button>
+                </div>
+              </div>
+              <div class="footer-top__download">
+                <button class="footer-top__download-iOS">
+                  <img src="/assets/svg/Footer/iOS.svg" alt="iOS" />
+                  <p>Приложение<span>для iOS</span></p>
+                </button>
+                <button class="footer-top__download-Android">
+                  <img src="/assets/svg/Footer/Android.svg" alt="Android" />
+                  <p>Приложение<span>для Android</span></p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-centre">
+            <img src="/assets/svg/Footer/Approve/Frame-1.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-2.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-3.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-4.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-5.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-6.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-7.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-8.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-9.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-10.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-11.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-12.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-13.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-14.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-15.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-16.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-17.svg" alt="" />
+          </div>
+          <hr />
+          <div class="footer-bottom">
+            <p class="footer-bottom__left">
+              casino is owned and operated by FGS SOFTWARE SOLUTIONS S.R.L., a
+              company registered and established under the laws of Costa Rica.
+              FGS SOFTWARE SOLUTIONS S.R.L. is regulated by the Government of
+              Costa Rica. SOFTWARE SOLUTIONS S.R.L. registration number is
+              3-102-871832. ****
+            </p>
+            <div class="footer-bottom__right">
+              <img src="/assets/svg/Footer/MasterCard.svg" alt="" />
+              <img src="/assets/svg/Footer/Visa.svg" alt="" />
+              <img src="/assets/svg/Footer/GC.svg" alt="" />
+              <img src="/assets/svg/Footer/18+.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

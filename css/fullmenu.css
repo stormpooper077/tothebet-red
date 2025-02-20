@@ -1,0 +1,241 @@
+.fullmenu {
+	margin-top: 20px;
+}
+
+.fullmenu__wrapper {
+	max-width: 1390px;
+	padding: 0 15px 0 25px;
+	margin: 0 auto;
+}
+
+.fullmenu__content {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+}
+
+.fullmenu__content-box {
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+	background-color: var(--navbar-dark-primary);
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	border: 1px solid var(--navbar-dark-primary);
+	width: 115px;
+	height: 100px;
+}
+
+.fullmenu__top-box {
+	gap: 6px;
+	max-width: 120px;
+}
+
+.fullmenu__top-box .fullmenu__content-icon {
+	width: 32px;
+	height: 32px;
+}
+
+.fullmenu__content-icon {
+	width: 48px;
+	height: 48px;
+}
+
+.fullmenu__content-title {
+	color: var(--white);
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.fullmenu__content-box:hover .fullmenu__content-title {
+	color: red;
+}
+
+.fullmenu__content-box:hover .fullmenu__content-icon {
+	filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(6932%) hue-rotate(0deg) brightness(100%) contrast(124%);
+  }
+
+  
+.fullmenu__content-box__active {
+	border: 1px solid red;
+	color: red;
+}
+
+.fullmenu__content-box__active .fullmenu__content-title {
+	color: red;
+}
+
+.fullmenu__bottom-overflow {
+	display: flex;
+	gap: 8px;
+}
+
+.fullmenu__content-box__active .fullmenu__content-icon {
+	filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(6932%) hue-rotate(0deg) brightness(100%) contrast(124%);
+}
+
+.fullmenu__top {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.fullmenu__bottom {
+	display: flex;
+	cursor:grab;
+	align-items: center;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.fullmenu__bottom::-webkit-scrollbar {
+	height: 0px;
+}
+
+.swiper-pagination {
+	z-index: 1 !important;
+}
+
+.fullmenu__bottom-overflow.swiper-wrapper .swiper-slider {
+	display: flex;
+	gap: 10px;
+}
+
+@media (max-width: 1700px) {
+	.fullmenu__bottom {
+			overflow-x: scroll;
+			cursor: grab;
+	}
+}
+@media (max-width: 1024px) {
+	.fullmenu__content {
+		display: flex;
+		gap: 0;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
+	.fullmenu__top {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+
+	.fullmenu__bottom {
+		padding: 10px 0;
+		width: 100%;
+		display: flex; 
+	}
+
+	.fullmenu__bottom-overflow {
+		display: flex; 
+		justify-content: space-between; 
+	}
+
+	.fullmenu__content-box {
+		white-space: nowrap;
+		text-align: center;
+		flex: 1 1 calc(13.333% - 10px);
+		height: 80px;
+		border-radius: 5px;
+	}
+
+	.fullmenu__content-title {
+		font-size: 10px;
+	}
+	.fullmenu__top-box .fullmenu__content-icon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.fullmenu__top-box:nth-child(2) .fullmenu__content-title {
+		display: none;
+	}
+
+	.fullmenu__content-box {
+		flex-shrink: 0;
+		text-align: center;
+		height: 80px;
+		border-radius: 5px;
+	}
+
+	.fullmenu__bottom-overflow {
+		width: 100%;
+	}
+
+	.fullmenu__top-box {
+		gap: 8px;
+		background-color: #293340;
+		border: 1px solid #293340;
+		flex-direction: row;
+		height: 40px;
+		padding: 8px;
+		justify-content: flex-start;
+	}
+
+	.fullmenu__top-box:nth-child(2) {
+		justify-content: center;
+	}
+
+	.fullmenu__top-box .fullmenu__content-title {
+		font-size: 12px;
+	}
+
+	.fullmenu__content-icon {
+		width: 36px;
+		height: 36px;
+	}
+
+	.fullmenu {
+		margin-top: 16px;
+	}
+
+	.fullmenu__top {
+		display: flex;
+		justify-content: flex-start;
+		gap: 10px;
+	}
+
+	.fullmenu__top-box:nth-child(1) {
+		width: 100%;
+	}
+
+	.fullmenu__top-box:last-child {
+		flex: 0 0 auto;
+		text-align: center;
+		border-radius: 5px;
+	}
+
+	.fullmenu__top-box {
+		max-width: none;
+	}
+
+	.fullmenu__top {
+		display: flex;
+		width: 100%;
+	}
+
+	.fullmenu__top-box:first-child {
+		flex-grow: 1;
+		width: 70%;
+	}
+
+	.fullmenu__top-box:last-child {
+		flex-shrink: 0;
+		width: 50px;
+	}
+}
+
+@media (max-width: 500px) {
+	.fullmenu__content-box {
+		flex: 1 0 80px
+	}
+	.fullmenu__bottom {
+		overflow-x: auto;
+	}
+}

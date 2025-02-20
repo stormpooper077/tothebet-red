@@ -1,0 +1,96 @@
+.privacy {
+  margin-top: 80px;
+}
+.privacy__wrapper {
+  max-width: 1340px;
+  padding: 0 15px 0 25px;
+  margin: 0 auto;
+}
+
+.privacy__date {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  font-family: Mulish;
+  font-weight: 400;
+  line-height: 16.2px;
+  word-wrap: break-word;
+}
+
+.privacy__table {
+  margin-top: 32px;
+  padding: 0 24px 24px 24px;
+  background: rgba(22, 28, 35, 0.5);
+  border-radius: 24px;
+  border: 1px #ff5f00 solid;
+}
+
+.privacy__table-title {
+  color: #ff5f00;
+  font-size: 20px;
+  margin-top: 24px;
+  font-family: Mulish;
+  font-weight: 900;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+.privacy__table-description {
+  color: white;
+  margin-top: 6px;
+  font-size: 14px;
+  font-family: Mulish;
+  font-weight: 500;
+  line-height: 19.2px;
+  word-wrap: break-word;
+}
+
+.privacy__table ul {
+  margin-top: 12px;
+}
+
+.privacy__table ul li {
+  color: white;
+  font-size: 16px;
+  font-family: Mulish;
+  font-weight: 500;
+  line-height: 19.2px;
+  word-wrap: break-word;
+}
+
+.contribution-table {
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 12px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.contribution-table table {
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+}
+
+.contribution-table thead th {
+  background-color: #1b1b1b;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px;
+}
+
+.contribution-table tbody tr {
+  background-color: #202020;
+}
+
+.contribution-table tbody td {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px;
+  border-top: 1px solid #2a2a2a;
+}

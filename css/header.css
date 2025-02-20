@@ -1,0 +1,259 @@
+.header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 15;
+  background-color: #0E1620;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+}
+
+.header__content-left {
+  margin-right: auto;
+}
+
+.header__content-left img {
+  height: 39px;
+}
+
+.header__content-wallets {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.header__content-right {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-left: auto;
+}
+
+.header__content-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__content-groups {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__content-button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white);
+  display: flex;
+  background: linear-gradient(90.93deg, #4d030a 4.48%, #A30C18 96.8%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.header__content-button:first-child {
+  background-image: none;
+  border: 1px solid red;
+}
+
+.header__content-button:hover {
+  transform: scale(0.95);
+}
+
+.header__content-personal:nth-child(1) {
+  background-image: url("/assets/images/OrangeButton.png");
+  border: 1px solid #fc6200;
+}
+
+.shake {
+  animation: shake 5s ease-in-out infinite;
+}
+
+.header__content-personal:nth-child(2) {
+  background-image: unset;
+  height: 47px;
+  background-color: #161c23;
+  border: 1px solid #00a1e3;
+  width: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__top-language {
+  min-width: 72px;
+  display: flex;
+  align-items: center;
+  height: 47px;
+  max-width: 160px;
+  width: 100%;
+  flex-direction: row;
+  background-color: #161c23;
+  border-radius: 12px;
+  justify-content: space-between;
+  display: flex;
+  border: 1px solid #161c23;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 12px;
+  transition: 0.2s ease-in-out;
+}
+
+.header__top-language_left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.header__top-language_left img {
+  width: 24px;
+  height: 24px;
+}
+
+.header__drop {
+  background-color: #161c23 !important;
+}
+
+.header__drop-item {
+  font-size: 16px;
+}
+
+.burger-menu {
+  z-index: 5;
+  cursor: pointer;
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+
+.nav-bar.active + .overlay {
+  display: block;
+}
+
+.nav-dropdown {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .header__content-buttons {
+    gap: 12px;
+  }
+  .header__content-button img {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__wrapper {
+    padding: 0 20px;
+  }
+
+  .header__dropdown {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+
+  #nav-bar.active {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+  }
+
+  #nav-bar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  #nav-bar::-webkit-scrollbar-track {
+    background-color: var(--bg-secondary);
+  }
+
+  #nav-bar::-webkit-scrollbar-thumb {
+    background-color: var(--color-yellow);
+    border-radius: 4px;
+  }
+
+  .header__content-button {
+    padding: 8px 12px;
+  }
+
+  .switcher {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .nav-dropdown .header__top-language {
+    background-color: var(--color-purple-black);
+  }
+
+  .nav-dropdown .dropdown-drop {
+    bottom: 50px;
+    background-color: var(--color-purple-black) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding: 0 15px;
+  }
+}

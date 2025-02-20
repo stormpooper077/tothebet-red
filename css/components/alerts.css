@@ -1,0 +1,32 @@
+.alerts-status {
+	width: 100%;
+	padding: 20px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 16px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 135%;
+	color: var(--white);
+}
+
+.alerts-status svg {
+	width: 48px;
+}
+
+.alerts-status__warning {
+	background-color: rgb(255, 0, 0, 0.1);
+	border: 1px solid #ff0000;
+}
+
+.alerts-status__success {
+	background-color: rgba(74, 201, 155, 0.322);
+	border: 1px solid #4ac99b;
+}
+
+.alerts-status__information {
+	background-color: rgba(255, 199, 0, .32);
+	border: 1px solid rgba(255, 199, 0, 1);
+}

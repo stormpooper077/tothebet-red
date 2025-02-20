@@ -1,0 +1,223 @@
+		<!-- Modal Cashier -->
+		<div id="modalCachier" class="modal">
+			<div class="modal-cashier modal-content">
+				<div class="modal__content-top-cashier">
+					<div class="modal__content-top_title">
+						<h2 class="modal-content__title">Касса</h2>
+						<button id="modalClose1" class="modal__buttons modal-content__close">
+							<img src="/assets/svg/Modal/CloseModal.svg" alt="Закрыть">
+						</button>
+					</div>
+					<div class="cashier-content-tabs">
+						<button class="cashier-content-tab cashier-content-tab--active"
+							data-tab="deposit">Пополнение</button>
+						<button class="cashier-content-tab" data-tab="withdraw">Вывод</button>
+					</div>
+				</div>
+				<div class="cashier-content-container">
+					<div id="deposit" class="modal-cashier__body">
+						<div class="modal-cashier__methods">
+							<h4 class="method-category" data-category="cards">Карты</h4>
+							<div class="modal-cashier__method-list cards">
+								<button class="modal-cashier__method" data-method="VISA/Mastercard">
+									<img src="/assets/svg/mastercard.svg" alt="VISA / Mastercard">VISA/Mastercard
+								</button>
+							</div>
+							<h4 class="method-category" data-category="e-wallets">Электронные кошельки</h4>
+							<div class="modal-cashier__method-list e-wallets">
+								<button class="modal-cashier__method" data-method="Kvitum">
+									<img src="/assets/svg/kvitum.svg" alt="Kvitum">Kvitum
+								</button>
+							</div>
+							<h4 class="method-category" data-category="cryptos">Криптовалюты</h4>
+							<div class="modal-cashier__method-list cryptos">
+								<button class="modal-cashier__method" data-method="Tether TRC-20">
+									<img src="/assets/images/trc20.png" alt="Tether TRC-20">Tether TRC-20
+								</button>
+								<button class="modal-cashier__method" data-method="Tether ERC-20">
+									<img src="/assets/svg/TetherERC20.svg" alt="Tether ERC-20">Tether ERC-20
+								</button>
+								<button class="modal-cashier__method" data-method="Tether BEP-20">
+									<img src="/assets/images/bep20.png" alt="Tether BEP-20">Tether BEP-20
+								</button>
+								<button class="modal-cashier__method" data-method="Bitcoin">
+									<img src="/assets/images/bitcoin.png" alt="Bitcoin">Bitcoin
+								</button>
+							</div>
+						</div>
+						<div class="modal-cashier__details">
+							<div class="modal-cashier__balance">
+								<div class="modal-cashier__balance-left">
+									<div><img src="/assets/svg/Wallet.svg" alt="Wallet"></div>
+									<span>Баланс: 0 Р</span>
+								</div>
+							</div>
+							<div id="depositCashierBottom" class="modal-cashier__bottoms">
+								<div id="depositSelectedMethod" class="modal-cashier__selected-method">
+									<div class="modal-cashier__selected-top">
+										<span id="depositMethodName">Piastrix кошелек</span>
+										<p class="modal-cashier__limits">Мин: 100 Р; Макс: 300 000 Р</p>
+									</div>
+									<button class="modal-cashier__info-btn"><img src="/assets/svg/InfoCashiersvg.svg"
+											alt="InfoCashiersvg"></button>
+									<div class="modal-cashier__payments">
+										<div class="payment-tooltip">
+											<div>
+												<div class="payments-tooltip__info">Срок зачисления: <span
+														class="payments-tooltip__info-timing">Мгновенно</span></div>
+												<div class="payments-tooltip__info">Комиссия: <span
+														class="payments-tooltip__info-commission">0%</span>
+												</div>
+												<div class="payments-tooltip__info">Мин. сумма: <span
+														class="payments-tooltip__info-minAmount">3
+														000 ₽</span></div>
+												<div class="payments-tooltip__info">Макс. сумма: <span
+														class="payments-tooltip__info-maxAmount">150 000
+														₽</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-cashier__amount-section">
+									<div class="input">
+										<div class="input__wrapper">
+											<span class="input__icon">
+												<img src="/assets/svg/Modal/ModalMoneyCash.svg" alt="CashierWallet" />
+											</span>
+											<input type="text" class="input__field input__field-amount"
+												placeholder="Введите сумму" value="2500" />
+											<label class="input__label input__label-amount" for="amount-2">Сумма
+												пополнения</label>
+										</div>
+										<p class="input__error-message">
+											Ошибка: введите корректную сумму
+										</p>
+									</div>
+								</div>
+								<div class="modal-cashier__bottom">
+									<button class="modal-cashier__submit-btn">Пополнить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="withdraw" style="display: none;" class="modal-cashier__body">
+						<div style="opacity: 0.1; cursor:not-allowed;" class="modal-cashier__methods">
+							<h4 class="method-category" data-category="cards">Карты</h4>
+							<div class="modal-cashier__method-list cards">
+								<button class="modal-cashier__method" data-method="VISA/Mastercard">
+									<img src="/assets/svg/mastercard.svg" alt="VISA / Mastercard">VISA/Mastercard
+								</button>
+							</div>
+							<h4 class="method-category" data-category="e-wallets">Электронные кошельки</h4>
+							<div class="modal-cashier__method-list e-wallets">
+								<button class="modal-cashier__method" data-method="Kvitum">
+									<img src="/assets/svg/kvitum.svg" alt="Kvitum">Kvitum
+								</button>
+							</div>
+							<h4 class="method-category" data-category="cryptos">Криптовалюты</h4>
+							<div class="modal-cashier__method-list cryptos">
+								<button class="modal-cashier__method" data-method="Tether TRC-20">
+									<img src="/assets/images/trc20.png" alt="Tether TRC-20">Tether TRC-20
+								</button>
+								<button class="modal-cashier__method" data-method="Tether ERC-20">
+									<img src="/assets/svg/TetherERC20.svg" alt="Tether ERC-20">Tether ERC-20
+								</button>
+								<button class="modal-cashier__method" data-method="Tether BEP-20">
+									<img src="/assets/images/bep20.png" alt="Tether BEP-20">Tether BEP-20
+								</button>
+								<button class="modal-cashier__method" data-method="Bitcoin">
+									<img src="/assets/images/bitcoin.png" alt="Bitcoin">Bitcoin
+								</button>
+							</div>
+						</div>
+						<div class="modal-cashier__details">
+							<div class="modal-cashier-rules">
+								<div class="modal-cashier-rules__header">
+									<span class="modal-cashier-rules__icon"><img src="/assets/svg/Information.svg"
+											alt=""></span>
+									<span class="modal-cashier-rules__title">Необходимо выполнить условия</span>
+								</div>
+								<ul class="modal-cashier-rules__list">
+									<li class="modal-cashier-rules__item">
+										<span class="modal-cashier-rules__status"><img src="/assets/svg/CloseRules.svg"
+												alt=""></span>
+										Не внесён минимальный депозит
+									</li>
+									<li class="modal-cashier-rules__item">
+										<span class="modal-cashier-rules__status"><img src="/assets/svg/CloseRules.svg"
+												alt=""></span>
+										Личные данные не заполнены
+									</li>
+									<li class="modal-cashier-rules__item">
+										<span class="modal-cashier-rules__status"><img src="/assets/svg/CloseRules.svg"
+												alt=""></span>
+										Невыполнены условия отыгрыша
+									</li>
+								</ul>
+								<button data-tab="deposit" class="modal-cashier-rules__btn">Пополнить</button>
+							</div>
+							<p class="modal-cashier__info">
+								<img src="/assets/svg/WithdrawLock.svg" alt="WithdrawLock">
+								Выполните все условия для вывода средств.
+							</p>
+						</div>
+						<div class="modal-cashier__details modal-cashier__details-succes">
+							<div class="modal-cashier__balance">
+								<div class="modal-cashier__balance-left">
+									<div><img src="/assets/svg/Wallet.svg" alt="Wallet"></div>
+									<span>Баланс: 0 Р</span>
+								</div>
+							</div>
+							<div id="withdrawModalCashierBottoms" class="modal-cashier__bottoms">
+								<div id="withdrawSelectedMethod" class="modal-cashier__selected-method">
+									<div class="modal-cashier__selected-top">
+										<span id="withdrawMethodName">Piastrix кошелек</span>
+										<p class="modal-cashier__limits">Мин: 100 Р; Макс: 300 000 Р</p>
+									</div>
+									<button class="modal-cashier__info-btn"><img src="/assets/svg/InfoCashiersvg.svg"
+											alt="InfoCashiersvg"></button>
+									<div class="modal-cashier__payments" id="tooltip">
+										<div class="payment-tooltip">
+											<div>
+												<div class="payments-tooltip__info">Срок зачисления: <span
+														class="payments-tooltip__info-timing">Мгновенно</span></div>
+												<div class="payments-tooltip__info">Комиссия: <span
+														class="payments-tooltip__info-commission">0%</span>
+												</div>
+												<div class="payments-tooltip__info">Мин. сумма: <span
+														class="payments-tooltip__info-minAmount">3
+														000 ₽</span></div>
+												<div class="payments-tooltip__info">Макс. сумма: <span
+														class="payments-tooltip__info-maxAmount">150 000
+														₽</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="modal-cashier__amount-section">
+									<div class="input">
+										<div class="input__wrapper">
+											<span class="input__icon">
+												<img src="/assets/svg/Modal/ModalMoneyCash.svg" alt="CashierWallet" />
+											</span>
+											<input type="text" class="input__field input__field-amount"
+												placeholder="Введите сумму" value="2500" />
+											<label class="input__label input__label-amount" for="amount-2">Сумма
+												пополнения</label>
+										</div>
+										<p class="input__error-message">
+											Ошибка: введите корректную сумму
+										</p>
+									</div>
+								</div>
+								<div class="modal-cashier__bottom">
+									<button class="modal-cashier__submit-btn">Пополнить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="modalBackdrop1" class="modal-overlay"></div>
+		</div>

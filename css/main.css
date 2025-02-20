@@ -1,0 +1,238 @@
+/* Base imports */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900');
+@import "./reset.css";
+
+/* Component styles */
+@import "./components/modal.css";
+@import "./components/alerts.css"; 
+@import "./components/input.css";
+@import "./components/tooltip.css";
+
+/* Layout styles */
+@import "./sidebar.css";
+@import "./header.css";
+@import "./footer.css";
+
+/* Feature styles */
+@import "./slider.css";
+@import "./fullmenu.css";
+@import "./slots.css";
+@import "./events.css";
+@import "./tournaments.css";
+@import "./providers.css";
+@import "./discount.css";
+@import "./personal.css";
+@import "./search.css";
+@import "./casinogames.css";
+@import "./gameContainer.css";
+@import "./providersModal.css";
+@import "./promo.css";
+@import "./jackpots.css";
+@import "./privacy.css";
+@import "./bonuses.css";
+@import "./VIPprogram.css";
+@import "./registrationModal.css";
+
+/* Variables */
+:root {
+  /* Colors */
+  --white: #fff;
+  --purple-black: #110b16;
+  --rich-black: #161c23;
+  --yellow: #f1c40f;
+  --black: #000;
+  --black-30: rgba(0, 0, 0, 0.3);
+
+  /* Gradients */
+  --color-gradient: linear-gradient(
+    to bottom,
+    rgba(148, 0, 211, 1) 0%,
+    rgba(75, 0, 130, 1) 100%
+  );
+  --color-gradient-2: linear-gradient(
+    to bottom,
+    rgba(21, 94, 239, 0.082) 0%,
+    rgba(41, 112, 255, 0.161) 100%
+  );
+  --color-gradient-3: linear-gradient(
+    to bottom,
+    rgba(255, 186, 15, 1) 0%,
+    rgba(197, 80, 9, 0.773) 100%
+  );
+  --color-gradient-4: linear-gradient(
+    to bottom,
+    rgba(30, 40, 63, 1) 0%,
+    rgba(17, 11, 22, 1) 100%
+  );
+  --color-gradient-5: linear-gradient(
+    to bottom,
+    rgba(26, 21, 0, 0.102) 0%,
+    rgba(38, 32, 0, 0.149) 100%
+  );
+  --color-gradient-6: linear-gradient(
+    to bottom, 
+    rgba(0, 119, 255, 100) 0%,
+    rgba(255, 17, 40, 100) 100%
+  );
+  --color-stroke: linear-gradient(
+    to bottom,
+    rgba(255, 95, 0, 1) 0%,
+    rgba(255, 188, 15, 1) 32%,
+    rgba(255, 188, 15, 1) 64%
+  );
+
+  /* Layout */
+  --navbar-width: 270px;
+  --navbar-width-min: 85px;
+  --navbar-dark-primary: #161c23;
+  --navbar-dark-secondary: #2c3e50;
+  --navbar-light-primary: #f5f6fa;
+  --navbar-light-secondary: #8392a5;
+  
+  /* Other */
+  --transition: 0.3s ease;
+  --border-radius: 12px;
+}
+
+/* Base styles */
+html,
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(48, 48, 48);
+}
+
+/* Header styles */
+.header-wrapper {
+  max-width: 1390px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__content {
+  justify-content: space-between;
+}
+
+/* Navigation */
+#nav-bar {
+  width: 250px;
+}
+
+#nav-bar.collapsed {
+  width: 70px;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+  .header__content-left {
+    display: block;
+  }
+  
+  .header__content {
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  #nav-bar {
+    z-index: 25;
+    width: var(--navbar-width);
+    gap: 24px;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    background: var(--navbar-dark-primary);
+    display: flex;
+    flex-direction: column;
+    color: var(--navbar-light-primary);
+    padding: 25px 15px;
+    height: 100vh;
+    transition: right 0.2s ease;
+  }
+
+  #nav-bar.open {
+    padding: 23px 11px 11px 23px;
+    right: 0;
+  }
+
+  #toggle-menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 15px;
+    z-index: 26;
+    cursor: pointer;
+  }
+
+  .nav-button {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  #nav-bar.open .nav-button {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Main content */
+#main {
+  margin-top: 100px;
+  transition: margin 0.15s;
+}
+
+/* Responsive wrappers */
+@media (max-width: 1025px) {
+  .tournaments__wrapper,
+  .discount__wrapper,
+  .providers__wrapper,
+  .events__wrapper,
+  .slots__wrapper,
+  .fullmenu__wrapper,
+  .main__wrapper,
+  .header__wrapper,
+  .bonuses__wrapper,
+  .vip__wrapper,
+  .promo__wrapper,
+  .levels__wrapper,
+  .promo__banner-wrapper,
+  .faq_wrapper,
+  .jackpots__wrapper {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 730px) {
+  .tournaments__wrapper,
+  .discount__wrapper,
+  .providers__wrapper,
+  .events__wrapper,
+  .slots__wrapper {
+    padding: 0px;
+  }
+
+  .fullmenu__wrapper,
+  .main__wrapper,
+  .header__wrapper {
+    padding: 0 15px;
+  }
+}
+
+/* Logo */
+.main-logotype img {
+  max-width: 100px;
+}
+
+/* Animations */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 50%, 70%, 90% {
+    transform: translateX(-0.5px);
+    transform: translateY(-1px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(0.5px);
+    transform: translateY(1px);
+  }
+}

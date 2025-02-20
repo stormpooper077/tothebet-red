@@ -1,0 +1,263 @@
+.tournaments {
+	margin-top: 40px;
+}
+
+.tournaments__wrapper {
+	max-width: 1390px;
+	padding: 0 15px 0 25px;
+	margin: 0 auto;
+}
+
+.tournaments__content {
+	display: flex;
+	border-radius: 16px;
+	flex-direction: column;
+}
+
+.tournaments__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tournaments__header-left {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.tournaments__header-left img {
+    width: 24px;
+    height: 24px;
+}
+
+.tournaments__title {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--white);
+}
+
+.tournaments__header-right {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.tournaments__slider-controls {
+	display: flex;
+	align-items: center;
+}
+
+.tournaments__slider-arrow {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px;
+	border-radius: 50%;
+	background-color: rgba(26, 28, 30, 0.3);
+	border: 1px solid var(--white);
+	cursor: pointer;
+}
+
+.tournaments__slider-arrow--left {
+	border: none;
+	transform: rotate(-180deg);
+}
+
+.tournaments__all-link {
+	font-size: 16px;
+	font-weight: 600;
+	color: red;
+}
+
+.tournaments__slide-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+}
+
+.tournaments__image {
+	width: 685px;
+	border-radius: 10px;
+}
+
+.tournaments__slide-right {
+	width: 623px;
+	display: flex;
+	flex-direction: column;
+	gap: 44px;
+	justify-content: space-between;
+	padding: 16px 16px 16px 0;
+}
+
+.tournaments__info {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tournaments__season-title {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.tournaments__prize-info {
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	color: var(--white);
+}
+
+.tournaments__prize-amount {
+	color: var(--yellow);
+	font-weight: 600;
+	font-size: 18px;
+	text-align: right;
+}
+
+.tournaments__timers {
+	gap: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.tournaments__time-left {
+	font-size: 26px;
+	font-weight: 600;
+	color: var(--white);
+	opacity: 0.8;
+}
+
+.tournaments__countdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 13px;
+}
+
+.tournaments__time {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--white);
+}
+
+.tournaments__time-value {
+	color: var(--yellow);
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.tournaments__details-btn {
+	padding: 12px 20px;
+	background-color: #0f1419;
+	color: var(--white);
+	font-size: 16px;
+	cursor: pointer;
+	transition: var(--transition);
+	border-radius: 8px;
+	font-weight: 600;
+}
+
+.tournaments__details-btn:hover {
+	background-color: #ffcc00;
+	color: var(--primary);
+}
+
+.tournaments__slides {
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.tournaments__slide {
+	display: flex !important;
+	gap: 16px;
+	background-color: #161c23;
+	border-radius: 16px;
+}
+
+@media (max-width: 1432px) {
+	.tournaments__image {
+		width: 100%;
+    height: 100%;
+		object-fit: cover;	
+	}
+}
+
+@media (max-width: 991px) {
+	.tournaments__slide-left img {
+		width: 100%;
+	}
+	.tournaments__slide-right {
+		width: 100%;
+		padding: 24px;
+	}
+}
+
+@media (max-width: 860px) {
+	.tournaments {
+		margin-top: 24px;
+	}
+	.tournaments__wrapper {
+		padding: 0;
+	}
+	.tournaments__title {
+		font-size: 18px;
+	}
+	.tournaments__icon {
+		width: 24px;
+		height: 24px;
+	}
+	.tournaments__slider-arrow {
+		width: 24px;
+		height: 24px;
+	}
+	.tournaments__slide {
+		display: flex;
+		flex-direction: column;
+	}
+	.tournaments__content {
+		padding: 16px;
+		border-radius: 8px;
+	}
+	.etournaments__slides {
+		display: flex;
+		gap: 10px;
+	}
+}
+@media (max-width: 520px) {
+	.tournaments__info {
+		flex-direction: column;
+		gap: 8px;
+	}
+	.tournaments__season-title {
+		font-size: 22px;
+	}
+	.tournaments__prize-info {
+		flex-direction: row;
+		 gap: 8px;
+		 font-size: 12px;
+		 align-items: center;
+	}
+	.tournaments__prize-amount {
+		font-size: 12px;
+	}
+	.tournaments__time-left {
+		text-align: center;
+		font-size: 16px;
+	}
+	.tournaments__time-value {
+		font-size: 32px;
+	}
+} 

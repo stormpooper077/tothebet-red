@@ -1,0 +1,140 @@
+.search {
+	margin-top: 40px;
+}
+
+.search__wrapper {
+	max-width: 1390px;
+	padding: 0 15px 0 25px;
+	margin: 0 auto;
+}
+
+.search__content {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+
+.search-results__header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 16px;
+	margin-bottom: 20px;
+}
+
+.search-results__back-button {
+	text-decoration: none;
+	font-size: 18px;
+	display: flex;
+	color: #fff;
+	gap: 10px;
+}
+
+.search-results__back-count {
+	color: #ffce3b;
+}
+
+.search-results__filters {
+	overflow-y: auto;
+    max-width: 100%;
+				flex-wrap: wrap;
+				gap: 10px;
+				justify-content: start;
+				align-items: start;
+				display: flex;
+    white-space: nowrap;
+}
+
+.search-results__reset-button {
+	background-color: #3b465b;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+}
+
+.search-results__reset-button:hover {
+	transform: scale(0.95);
+	background-color: #2e3748;
+}
+
+.search-results__filter-tag {
+	color: #fff;
+	gap: 6px;
+	background-color: rgb(247, 182, 54, 0.2);
+	padding: 8px 10px;
+	border-radius: 20px;
+	border: 1px solid #ffce3b;
+	display: flex;
+	align-items: center;
+}
+
+.search-results__remove-tag {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.search-results__list {
+	display: grid;
+	justify-content: space-between;
+	width: 100%;
+	gap: 10px;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.search-results__game-card {
+	background-color: #1a2654;
+	width: 15%;
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 20px;
+	transition: transform 0.3s ease;
+}
+
+.search-results__game-image {
+	width: 100%;
+	height: auto;
+}
+
+.search-results__game-title {
+	padding: 10px;
+	font-size: 14px;
+}
+
+.search-results__game-card:hover {
+	transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+	.search-results__list {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+@media (max-width: 785px) {
+	.search-results__filters::-webkit-scrollbar {
+		height: 0px;
+	}
+	.search-results__filters {
+		flex-wrap: nowrap;
+	}
+	.search-results__list {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 575px) {
+	.search-results__list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 470px) {
+	.search-results__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

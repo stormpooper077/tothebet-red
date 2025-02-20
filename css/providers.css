@@ -1,0 +1,143 @@
+.providers {
+	margin-top: 40px;
+}
+
+.providers__wrapper {
+	max-width: 1390px;
+	padding: 0 15px 0 25px;
+	margin: 0 auto;
+}
+
+.providers__content {
+	display: flex;
+	border-radius: 16px;
+	flex-direction: column;
+}
+
+.providers__content-left {
+	width: 288px;
+}
+
+.providers__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.providers__header-left {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.providers__header-left img {
+    width: 24px;
+    height: 24px;
+}
+
+.providers__title {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--white);
+}
+
+.providers__header-right {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.providers__slider-controls {
+	display: flex;
+	align-items: center;
+}
+
+.providers__slider-arrow {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px;
+	border-radius: 50%;
+	background-color: rgba(26, 28, 30, 0.3);
+	border: 1px solid var(--white);
+	cursor: pointer;
+}
+
+.providers__slider-arrow--left {
+	border: none;
+	transform: rotate(-180deg);
+}
+
+.providers__all-link {
+	font-size: 16px;
+	font-weight: 600;
+	color: red;
+}
+
+.providers__slide-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+}
+
+.providers__slides {
+	display: flex;
+	overflow: hidden;
+	flex-direction: row;
+	margin-top: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.providers__list {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	height: 90px !important;
+	border-radius: 12px;
+	background-color: #161c23;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.providers__list img {
+	height: 70px;
+}
+
+.providers__list:hover {
+	background-color: #131b24;
+}
+
+.provider__lists {
+	display: flex;
+	width: 50%;
+	align-items: center;
+	flex-direction: row;
+}
+
+@media (max-width: 730px) {
+	.providers {
+		margin-top: 24px;
+	}
+	.providers__wrapper {
+		padding: 0;
+	}
+	.providers__title {
+		font-size: 18px;
+	}
+	.providers__icon {
+		width: 24px;
+		height: 24px;
+	}
+	.providers__slider-arrow {
+		width: 24px;
+		height: 24px;
+	}
+	.providers__content {
+		padding: 16px;
+		border-radius: 8px;
+	}
+}

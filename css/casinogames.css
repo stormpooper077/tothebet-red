@@ -1,0 +1,53 @@
+.slots__bottom.slots__game {
+	margin-top: 20px;
+	display: block;
+}
+
+.slots__game {
+	display: grid;
+	grid-template-rows: repeat(6, 1fr);
+	gap: 10px;
+	justify-items: flex-start;
+}
+
+.slots__game-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 10px;
+	justify-items: center;
+}
+
+.slots__game-grid .slot-machine {
+	width: 100%;
+}
+
+@media (max-width: 1524px) {
+	.slots__game-grid {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 16px;
+			justify-items: center;
+	}
+}
+
+@media (max-width: 1024px) {
+	.slots__game-grid {
+			grid-template-columns: repeat(4, 1fr);
+			gap: 10px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.slots__game-grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 10px;
+	}
+}
+
+@media (max-width: 576px) {
+	.slots__game-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 10px;
+	}
+}

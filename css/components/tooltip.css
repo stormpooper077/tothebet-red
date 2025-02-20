@@ -1,0 +1,107 @@
+[data-tooltip][aria-label] {
+  position: relative;
+}
+[data-tooltip][aria-label]::before {
+  content: attr(aria-label);
+  pointer-events: none;
+  white-space: pre;
+  position: absolute;
+	background-color: var(--rich-black);
+	color: var(--white);
+	border-radius: 4px;
+	padding: 16px 10px;
+  opacity: 0;
+  visibility: none;
+	text-align: center;
+	font-weight: 600;
+	max-width: 200px;
+	font-size: 14px;
+}
+[data-tooltip][aria-label]::after {
+  content: "";
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-color: var(--rich-black);
+  border-width: 0;
+  border-style: solid;
+  opacity: 0;
+  visibility: none;
+}
+[data-tooltip^="up"][aria-label]::before {
+  bottom: calc(0.5rem + 100%);
+  right: 50%;
+  transform: translateX(50%);
+}
+[data-tooltip^="up"][aria-label]::after {
+  border-top-width: 0.5rem;
+  border-right-width: 0.5rem;
+  border-right-color: #0000;
+  border-left-width: 0.5rem;
+  border-left-color: #0000;
+  bottom: 100%;
+  right: 50%;
+  transform: translateX(50%);
+}
+[data-tooltip^="down"][aria-label]::before {
+  top: calc(42px + 100%);
+  right: 50%;
+  transform: translateX(50%);
+}
+[data-tooltip^="down"][aria-label]::after {
+  border-bottom-width: 0.5rem;
+  border-right-width: 0.5rem;
+  border-right-color: #0000;
+  border-left-width: 0.5rem;
+  border-left-color: #0000;
+  top: 240%;
+  right: 50%;
+  transform: translateX(50%);
+}
+[data-tooltip^="left"][aria-label]::before {
+  right: calc(1rem + 100%);
+  bottom: 50%;
+  transform: translateY(50%);
+}
+[data-tooltip^="left"][aria-label]::after {
+  border-left-width: 0.5rem;
+  border-top-width: 0.5rem;
+  border-top-color: #0000;
+  border-bottom-width: 0.5rem;
+  border-bottom-color: #0000;
+  bottom: 50%;
+  right: calc(0.5rem + 100%);
+  transform: translateY(50%);
+}
+[data-tooltip^="right"][aria-label]::before {
+  left: calc(24px + 100%);
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+[data-tooltip^="right"][aria-label]::after {
+  border-right-width: 0.5rem;
+  border-top-width: 0.5rem;
+  border-top-color: #0000;
+  border-bottom-width: 0.5rem;
+  border-bottom-color: #0000;
+  bottom: 50%;
+  left: calc(16px + 100%);
+  transform: translateY(50%);
+}
+
+[data-tooltip][aria-label]:hover::before,
+[data-tooltip][aria-label]:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+[data-tooltip$="150"][aria-label]:hover::before,
+[data-tooltip$="150"][aria-label]:hover::after {
+  transition-delay: 0.1s;
+}
