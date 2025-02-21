@@ -56,7 +56,7 @@ body {
   max-width: 600px;
   color: white;
   font-size: 36px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-align: center;
   line-height: 48.6px;
@@ -85,7 +85,7 @@ body {
 .promo__first p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   text-align: center;
   font-weight: 500;
   line-height: 21.6px;
@@ -115,7 +115,7 @@ body {
 .promo__first-right h2 {
   color: white;
   font-size: 24px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 800;
   line-height: 28.8px;
   word-wrap: break-word;
@@ -142,7 +142,7 @@ body {
   top: 13%;
   color: rgba(255, 255, 255, 0.05);
   font-size: 165px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-style: italic;
   font-weight: 900;
   line-height: 198px;
@@ -155,7 +155,7 @@ body {
   top: 13%;
   color: rgba(255, 255, 255, 0.05);
   font-size: 165px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-style: italic;
   font-weight: 900;
   line-height: 198px;
@@ -165,7 +165,7 @@ body {
 .promo__first-description {
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   line-height: 120%;
   word-wrap: break-word;
@@ -174,7 +174,7 @@ body {
 .promo__first-title {
   color: white;
   font-size: 24px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 800;
   line-height: 28.8px;
   word-wrap: break-word;
@@ -261,7 +261,7 @@ body {
 .promo__level-title {
   color: #00a1e3;
   font-size: 32px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 800;
   text-align: center;
   line-height: 38.4px;
@@ -271,7 +271,7 @@ body {
 .promo__level-description {
   color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   text-align: center;
   font-weight: 500;
   line-height: 16.8px;
@@ -307,7 +307,7 @@ body {
 .level-card__title {
   color: rgba(255, 255, 255, 0.9);
   font-size: 24px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 800;
   line-height: 28.8px;
   text-align: center;
@@ -318,7 +318,7 @@ body {
   color: rgba(255, 255, 255, 0.9);
   font-size: 12px;
   margin-top: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-align: center;
   line-height: 14.4px;
@@ -378,7 +378,7 @@ body {
   transform: translateX(-50%);
   color: white;
   font-size: 14px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-style: italic;
   font-weight: 900;
   line-height: 16.8px;
@@ -394,7 +394,7 @@ body {
   color: white;
   justify-content: space-between;
   font-size: 14px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   border-radius: 8px;
   line-height: 14.4px;
@@ -414,7 +414,7 @@ body {
 .level-card__stat-value {
   color: #ff5f00;
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 16.8px;
@@ -435,7 +435,7 @@ body {
   align-items: center;
   color: rgba(255, 255, 255, 0.4);
   font-size: 14px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 16.8px;
   word-wrap: break-word;
@@ -502,7 +502,7 @@ body {
 .promo__banner-center h2 {
   color: white;
   font-size: 18px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 21.6px;
   max-width: 430px;
@@ -524,7 +524,7 @@ body {
 .faq_title {
   color: white;
   font-size: 26px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 35.1px;
   word-wrap: break-word;

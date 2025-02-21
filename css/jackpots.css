@@ -45,7 +45,7 @@ body {
 .jackpots__first h2 {
   color: white;
   font-size: 48px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 64.8px;
@@ -63,7 +63,7 @@ body {
 .jackpots__bottom p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 21.6px;
   word-wrap: break-word;
@@ -72,7 +72,7 @@ body {
 .jackpots__bottom h1 {
   color: #ffba0f;
   font-size: 64px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 800;
   word-wrap: break-word;
 }
@@ -126,7 +126,7 @@ body {
   color: #ffba0f;
   font-size: 26px;
   margin-bottom: 12px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 120%;
   word-wrap: break-word;
@@ -140,7 +140,7 @@ body {
   gap: 6px;
   margin-top: 8px;
   justify-content: flex-start;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   line-height: 140%;
 }
@@ -155,7 +155,7 @@ body {
   color: white;
   text-align: center;
   font-size: 32px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 43.2px;
   word-wrap: break-word;
@@ -247,7 +247,7 @@ body {
 .jackpots__cards-title {
   color: #e38629;
   font-size: 32px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 800;
   line-height: 120%;
   word-wrap: break-word;
@@ -256,7 +256,7 @@ body {
 .jackpots__cards-counter {
   color: white;
   font-size: 42px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 43.2px;
   margin-top: 6px;
@@ -267,7 +267,7 @@ body {
   color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
   text-align: center;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   margin-top: 8px;
   font-weight: 500;
   word-wrap: break-word;
@@ -300,7 +300,7 @@ body {
 .jackpots__sabotage-title {
   color: white;
   font-size: 26px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   text-align: center;
   font-weight: 700;
   line-height: 35.1px;
@@ -344,7 +344,7 @@ body {
 .sabotage__first-title {
   color: #ff5f00;
   font-size: 18px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 21.6px;
   word-wrap: break-word;
@@ -354,7 +354,7 @@ body {
   color: white;
   margin-top: 4px;
   font-size: 14px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 16.8px;
   word-wrap: break-word;
@@ -387,7 +387,7 @@ body {
   color: white;
   font-size: 26px;
   text-align: center;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 35.1px;
   word-wrap: break-word;
@@ -424,7 +424,7 @@ body {
 .jackpots__bottom-table tbody tr td:first-child {
   color: #2b90fe;
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 21.6px;
   word-wrap: break-word;
@@ -434,7 +434,7 @@ body {
 .jackpots__bottom-table tbody tr td:nth-child(3) {
   color: white;
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 21.6px;
   word-wrap: break-word;
@@ -447,7 +447,7 @@ body {
 .jackpots__bottom-table th {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   line-height: 21.6px;
   word-wrap: break-word;
@@ -491,7 +491,7 @@ body {
   color: white;
   font-size: 26px;
   margin-bottom: 20px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 35.1px;

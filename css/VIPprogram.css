@@ -45,7 +45,7 @@
   text-align: center;
   color: white;
   font-size: 36px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 48.6px;
   word-wrap: break-word;
@@ -56,7 +56,7 @@
   margin-top: 12px;
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
   line-height: 19.2px;
   word-wrap: break-word;
@@ -73,7 +73,7 @@
 .vip__main-button div:first-child {
   color: white;
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 800;
   line-height: 120%;
   word-wrap: break-word;
@@ -95,7 +95,7 @@
   text-align: center;
   color: white;
   font-size: 32px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 43.2px;
   word-wrap: break-word;
@@ -104,7 +104,7 @@
 .advantages__top-description {
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   text-align: center;
   font-weight: 600;
   line-height: 21.6px;
@@ -154,7 +154,7 @@
 .advantages__box-title {
   color: #ff5f00;
   font-size: 32px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   margin-top: 24px;
   line-height: 100%;
@@ -166,7 +166,7 @@
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   margin-top: 12px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
   line-height: 120%;
   width: 100%;
@@ -184,7 +184,7 @@
   margin-top: 12px;
   color: rgba(255, 255, 255, 0.9);
   font-size: 12px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   width: 100%;
   font-weight: 600;
   line-height: 16.2px;
@@ -195,7 +195,7 @@
 .advantages__bottom-description {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   line-height: 18.9px;
   word-wrap: break-word;
@@ -219,7 +219,7 @@
 .vip__works-title {
   color: white;
   font-size: 32px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 43.2px;
   word-wrap: break-word;
@@ -269,7 +269,7 @@
   top: 0;
   color: rgba(255, 255, 255, 0.05);
   font-size: 165px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-style: italic;
   font-weight: 900;
   line-height: 198px;
@@ -279,7 +279,7 @@
 .works__box-title {
   color: white;
   font-size: 18px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 120%;
   word-wrap: break-word;
@@ -288,7 +288,7 @@
 .works__box-description {
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   word-wrap: break-word;
 }

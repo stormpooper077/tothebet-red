@@ -10,7 +10,7 @@
 .privacy__date {
   color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   line-height: 16.2px;
   word-wrap: break-word;
@@ -28,7 +28,7 @@
   color: #ff5f00;
   font-size: 20px;
   margin-top: 24px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 900;
   line-height: 27px;
   word-wrap: break-word;
@@ -38,7 +38,7 @@
   color: white;
   margin-top: 6px;
   font-size: 14px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   line-height: 19.2px;
   word-wrap: break-word;
@@ -51,7 +51,7 @@
 .privacy__table ul li {
   color: white;
   font-size: 16px;
-  font-family: Mulish;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
   line-height: 19.2px;
   word-wrap: break-word;

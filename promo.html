@@ -17,23 +17,6 @@
   </head>
   <body>
     <aside class="nav-bar" id="nav-bar">
-      <button class="switcher" id="toggle-menu-btn">
-        <img src="/assets/svg/ArrowSlider.svg" alt="" />
-      </button>
-      <div id="nav-header">
-        <div>
-          <button class="burger-menu" id="close-burger-menu-btn">
-            <img
-              src="/assets/svg/close-burger-menu.svg"
-              alt="Menu"
-              id="burger-icon"
-            />
-          </button>
-        </div>
-        <a class="main-logotype" href="/">
-          <img src="/assets/svg/LogoDark.svg" alt="logo" />
-        </a>
-      </div>
       <div id="nav-content">
         <div class="nav-content__column">
           <div
@@ -316,20 +299,6 @@
           </div>
         </div>
       </div>
-      <a href="#" class="nav-jackpot">
-        <img
-          src="/assets/images/JackpotTitle.png"
-          alt="JackpotTitle"
-          class="nav-jackpot__title"
-        />
-        <div class="nav-jackpot__box">
-          <p class="nav-jackpot__box-title">LEADER</p>
-          <p class="nav-jackpot__box-money">€ 7913,4</p>
-          <p class="nav-jackpot__box-maxbet">
-            draws between <span>€35000 and €45000</span>
-          </p>
-        </div>
-      </a>
       <div class="nav-app">
         <p class="nav-app__title">Установить приложение</p>
         <button class="nav-app__button">
@@ -363,69 +332,72 @@
       alt="BackgroundPromoStars"
     />
     <div id="overlay" class="overlay"></div>
+    <header class="header">
+      <button class="switcher" id="toggle-menu-btn">
+        <img src="/assets/svg/burger-menu.svg" alt="" />
+      </button>
+      <div class="header__wrapper">
+        <div class="header__content">
+          <a href="#" class="header__content-left">
+            <img src="/assets/svg/LogoDark.svg" alt="Logo" />
+          </a>
+          <div class="header__content-right">
+            <div class="dropdown header__dropdown">
+              <button class="dropdown header__top-language">
+                <div class="header__top-language_left">
+                  <img src="/assets/flags/RU.svg" alt="" />
+                </div>
+                <img
+                  class="footer-top__language-arrow"
+                  src="/assets/svg/DropdownArrow.svg"
+                  alt=""
+                />
+              </button>
+              <div id="dropdowntest" class="header__drop dropdown-drop">
+                <button
+                  href="#cards"
+                  class="dropdown-drop__item header__drop-item"
+                >
+                  <img src="/assets/flags/KZ.svg" alt="" />Kz
+                </button>
+                <button href="#cards" class="dropdown-drop__item">
+                  <img src="/assets/flags/AZ.svg" alt="" />Az
+                </button>
+              </div>
+            </div>
+            <div class="header__content-buttons">
+              <button
+                data-modal-open="modal3"
+                class="header__content-button"
+                id="openAuthModal"
+              >
+                <img src="/assets/svg/Login.svg" alt="" />Вход
+              </button>
+              <button
+                id="openRegModal"
+                data-modal-open="modal3"
+                class="header__content-button shake"
+              >
+                <img src="/assets/svg/Registration.svg" alt="" />Регистрация
+              </button>
+              <button class="burger-menu" id="burger-menu-btn">
+                <img
+                  src="/assets/svg/burger-menu.svg"
+                  alt="Menu"
+                  id="burger-icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main id="main" class="promo">
       <img
         class="promo-background"
         src="/assets/BackgroundPromo.png"
         alt="BackgroundPromo"
       />
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="header__content">
-            <a href="#" class="header__content-left">
-              <img src="/assets/svg/LogoDark.svg" alt="Logo" />
-            </a>
-            <div class="header__content-right">
-              <div class="dropdown header__dropdown">
-                <button class="dropdown header__top-language">
-                  <div class="header__top-language_left">
-                    <img src="/assets/flags/RU.svg" alt="" />
-                  </div>
-                  <img
-                    class="footer-top__language-arrow"
-                    src="/assets/svg/DropdownArrow.svg"
-                    alt=""
-                  />
-                </button>
-                <div id="dropdowntest" class="header__drop dropdown-drop">
-                  <button
-                    href="#cards"
-                    class="dropdown-drop__item header__drop-item"
-                  >
-                    <img src="/assets/flags/KZ.svg" alt="" />Kz
-                  </button>
-                  <button href="#cards" class="dropdown-drop__item">
-                    <img src="/assets/flags/AZ.svg" alt="" />Az
-                  </button>
-                </div>
-              </div>
-              <div class="header__content-buttons">
-                <button
-                  data-modal-open="modal3"
-                  class="header__content-button"
-                  id="openAuthModal"
-                >
-                  <img src="/assets/svg/Login.svg" alt="" />Вход
-                </button>
-                <button
-                  id="openRegModal"
-                  data-modal-open="modal3"
-                  class="header__content-button"
-                >
-                  <img src="/assets/svg/Registration.svg" alt="" />Регистрация
-                </button>
-                <button class="burger-menu" id="burger-menu-btn">
-                  <img
-                    src="/assets/svg/burger-menu.svg"
-                    alt="Menu"
-                    id="burger-icon"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
       <section class="promo__main">
         <div class="promo__wrapper">
           <div class="promo__first">
