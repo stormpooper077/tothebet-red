@@ -176,7 +176,6 @@ body {
 
 /* Main content */
 #main {
-  margin-top: 100px;
   transition: margin 0.15s;
 }
 
