@@ -55,7 +55,7 @@
 }
 
 #nav-content {
-  gap: 4px;
+  gap: 0px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -271,7 +271,7 @@
 #nav-bar.collapsed .nav-button__right img {
   width: 24px;
   height: 24px;
-  transform: scale(0.8);
+  transform: scale(1);
 }
 
 #nav-bar.collapsed .dropdown-menu {
