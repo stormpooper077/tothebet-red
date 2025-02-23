@@ -55,7 +55,7 @@
 }
 
 #nav-content {
-  gap: 4px;
+  gap: 0px;
   position: relative;
   display: flex;
   flex-direction: column;
