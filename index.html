@@ -217,66 +217,75 @@
       </div>
     </aside>
     <div id="overlay" class="overlay"></div>
-    <header class="header">
-      <button class="switcher" id="toggle-menu-btn">
-        <img src="/assets/svg/burger-menu.svg" alt="" />
-      </button>
-      <div class="header__wrapper">
-        <div class="header__content">
-          <a href="#" class="header__content-left">
-            <img src="/assets/svg/LogoDark.svg" alt="Logo" />
-          </a>
-          <div class="header__content-right">
-            <div class="dropdown header__dropdown">
-              <button class="dropdown header__top-language">
-                <div class="header__top-language_left">
-                  <img src="/assets/flags/RU.svg" alt="" />
-                </div>
-                <img
-                  class="footer-top__language-arrow"
-                  src="/assets/svg/DropdownArrow.svg"
-                  alt=""
-                />
-              </button>
-              <div id="dropdowntest" class="header__drop dropdown-drop">
-                <button
-                  href="#cards"
-                  class="dropdown-drop__item header__drop-item"
-                >
-                  <img src="/assets/flags/KZ.svg" alt="" />Kz
+    <div class="header-links">
+      <header class="header">
+        <button class="switcher" id="toggle-menu-btn">
+          <img src="/assets/svg/burger-menu.svg" alt="" />
+        </button>
+        <div class="header__wrapper">
+          <div class="header__content">
+            <a href="#" class="header__content-left">
+              <img src="/assets/svg/LogoDark.svg" alt="Logo" />
+            </a>
+            <div class="header__content-right">
+              <div class="dropdown header__dropdown">
+                <button class="dropdown header__top-language">
+                  <div class="header__top-language_left">
+                    <img src="/assets/flags/RU.svg" alt="" />
+                  </div>
+                  <img
+                    class="footer-top__language-arrow"
+                    src="/assets/svg/DropdownArrow.svg"
+                    alt=""
+                  />
                 </button>
-                <button href="#cards" class="dropdown-drop__item">
-                  <img src="/assets/flags/AZ.svg" alt="" />Az
+                <div id="dropdowntest" class="header__drop dropdown-drop">
+                  <button
+                    href="#cards"
+                    class="dropdown-drop__item header__drop-item"
+                  >
+                    <img src="/assets/flags/KZ.svg" alt="" />Kz
+                  </button>
+                  <button href="#cards" class="dropdown-drop__item">
+                    <img src="/assets/flags/AZ.svg" alt="" />Az
+                  </button>
+                </div>
+              </div>
+              <div class="header__content-buttons">
+                <button
+                  data-modal-open="modal3"
+                  class="header__content-button"
+                  id="openAuthModal"
+                >
+                  <img src="/assets/svg/Login.svg" alt="" />Вход
+                </button>
+                <button
+                  id="openRegModal"
+                  data-modal-open="modal3"
+                  class="header__content-button shake"
+                >
+                  <img src="/assets/svg/Registration.svg" alt="" />Регистрация
+                </button>
+                <button class="burger-menu" id="burger-menu-btn">
+                  <img
+                    src="/assets/svg/burger-menu.svg"
+                    alt="Menu"
+                    id="burger-icon"
+                  />
                 </button>
               </div>
             </div>
-            <div class="header__content-buttons">
-              <button
-                data-modal-open="modal3"
-                class="header__content-button"
-                id="openAuthModal"
-              >
-                <img src="/assets/svg/Login.svg" alt="" />Вход
-              </button>
-              <button
-                id="openRegModal"
-                data-modal-open="modal3"
-                class="header__content-button shake"
-              >
-                <img src="/assets/svg/Registration.svg" alt="" />Регистрация
-              </button>
-              <button class="burger-menu" id="burger-menu-btn">
-                <img
-                  src="/assets/svg/burger-menu.svg"
-                  alt="Menu"
-                  id="burger-icon"
-                />
-              </button>
-            </div>
           </div>
         </div>
+      </header>
+      <div class="header-links__content">
+        <a href="#" class="header-link">Слоты</a>
+        <a href="#" class="header-link">Live игры</a>
+        <a href="#" class="header-link">Crash игры</a>
+        <a href="#" class="header-link">Карточные</a>
+        <a href="#" class="header-link">Рулетка</a>
       </div>
-    </header>
+    </div>
     <main id="main">
       <section class="main">
         <div class="main__wrapper">
@@ -479,8 +488,20 @@
                     <div class="slot-machine__footer">
                       <h3 class="slot-machine__title">Default Title</h3>
                       <div class="slot-machine__like">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
-                          <path class="like-path" d="M12 5.12153L11.8635 4.99264C10.7014 3.85554 9.14236 3.21536 7.5165 3.20764C5.92264 3.20764 4.39391 3.84008 3.2659 4.96612C2.13789 6.09216 1.50278 7.61979 1.5 9.21364C1.5 12.4476 2.6865 13.9911 7.989 18.1806L10.7737 20.3421C11.4953 20.9022 12.5047 20.9022 13.2263 20.3421L16.011 18.1806C21.3135 13.9911 22.5 12.4476 22.5 9.21364C22.4972 7.61979 21.8621 6.09216 20.7341 4.96612C19.6061 3.84008 18.0773 3.20764 16.4835 3.20764C14.8576 3.21536 13.2986 3.85554 12.1365 4.99264L12 5.12153Z" stroke="#fff" fill="none"/>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="like-icon"
+                        >
+                          <path
+                            class="like-path"
+                            d="M12 5.12153L11.8635 4.99264C10.7014 3.85554 9.14236 3.21536 7.5165 3.20764C5.92264 3.20764 4.39391 3.84008 3.2659 4.96612C2.13789 6.09216 1.50278 7.61979 1.5 9.21364C1.5 12.4476 2.6865 13.9911 7.989 18.1806L10.7737 20.3421C11.4953 20.9022 12.5047 20.9022 13.2263 20.3421L16.011 18.1806C21.3135 13.9911 22.5 12.4476 22.5 9.21364C22.4972 7.61979 21.8621 6.09216 20.7341 4.96612C19.6061 3.84008 18.0773 3.20764 16.4835 3.20764C14.8576 3.21536 13.2986 3.85554 12.1365 4.99264L12 5.12153Z"
+                            stroke="#fff"
+                            fill="none"
+                          />
                         </svg>
                       </div>
                     </div>
@@ -518,8 +539,10 @@
               </div>
             </div>
             <div class="swiper-container6 slots__bottom">
-              <div class="swiper-wrapper slots__height" id="slot-machines-v2">
-              </div>
+              <div
+                class="swiper-wrapper slots__height"
+                id="slot-machines-v2"
+              ></div>
             </div>
           </div>
         </div>
@@ -616,8 +639,7 @@
               </div>
             </div>
             <div class="swiper-container6 slots__bottom">
-              <div class="swiper-wrapper slots__height" id="live-games">
-              </div>
+              <div class="swiper-wrapper slots__height" id="live-games"></div>
             </div>
           </div>
         </div>
@@ -713,8 +735,7 @@
               </div>
             </div>
             <div class="swiper-container6 slots__bottom">
-              <div class="swiper-wrapper slots__height" id="crash-games">
-              </div>
+              <div class="swiper-wrapper slots__height" id="crash-games"></div>
             </div>
           </div>
         </div>
@@ -1026,8 +1047,7 @@
               <img src="/assets/svg/Modal/FireGame.svg" alt="FireGame" />
               Горячие игры
             </h3>
-            <div class="modal__content-slots_list" id="hot-games">
-            </div>
+            <div class="modal__content-slots_list" id="hot-games"></div>
           </div>
         </div>
         <div id="modalBackdrop1" class="modal-overlay"></div>
@@ -2125,26 +2145,27 @@
               slidesPerGroup: 6,
               spaceBetween: 10,
             },
-        },
-      });
+          },
+        });
 
-      const swiper = new Swiper(".swiper-container7", {
-        slidesPerView: 6,
-        spaceBetween: 10,
-        breakpoints: {
-          0: {
-            slidesPerView: 3,
+        const swiper = new Swiper(".swiper-container7", {
+          slidesPerView: 6,
+          spaceBetween: 10,
+          breakpoints: {
+            0: {
+              slidesPerView: 3,
+            },
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 6,
+            },
           },
-          640: {
-            slidesPerView: 3,
-          },
-          768: {
-            slidesPerView: 4,
-          },
-          1024: {
-            slidesPerView: 6,
-          },
-        }})
+        });
       });
     </script>
     <script src="/js/createContainer.js"></script>
