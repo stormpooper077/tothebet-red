@@ -1,5 +1,5 @@
 #nav-bar {
-  top: 85px;
+  top: 67px;
   z-index: 25;
   width: var(--navbar-width);
   gap: 24px;
@@ -95,7 +95,7 @@
 .nav-jackpot__box-title,
 .nav-jackpot__box-money,
 .nav-jackpot__box-maxbet {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   text-align: center;
   color: var(--white);
@@ -214,6 +214,9 @@
 .dropdown-arrow,
 .nav-button__right img {
   transition: transform var(--transition);
+  width: 24px;
+  height: 24px;
+  transform: scale(1);
 }
 
 .nav-button.active .dropdown-arrow {

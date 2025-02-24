@@ -23,9 +23,8 @@
   color: #fff;
   display: flex;
   flex-direction: row;
-  margin: 0  0 0 87px;
-  gap: 12px;
-  padding-bottom: 12px;
+  margin-right: auto;
+  gap: 24px;
   font-size: 14px;
 }
 
@@ -48,7 +47,7 @@
 }
 
 .header__content-left {
-  margin-right: auto;
+  
 }
 
 .header__content-left img {
