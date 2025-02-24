@@ -32,6 +32,8 @@
 .fullmenu__top-box {
 	gap: 6px;
 	max-width: 120px;
+    background-color: #293340;
+    border: 1px solid #293340;
 }
 
 .fullmenu__top-box .fullmenu__content-icon {
