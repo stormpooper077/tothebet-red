@@ -1601,21 +1601,7 @@
       </div>
       <div id="modalBackdrop1" class="modal-overlay"></div>
     </div>
-    <script>
-      document.querySelectorAll(".faq-question").forEach((item) => {
-        item.addEventListener("click", function () {
-          const faqItem = this.parentElement;
-          faqItem.classList.toggle("active");
-        });
-      });
-      const tabs = document.querySelectorAll(".bonuses__tab");
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          tabs.forEach((t) => t.classList.remove("bonuses__tab--active"));
-          tab.classList.add("bonuses__tab--active");
-        });
-      });
-    </script>
+    <script src=""></script>
     <script src="./js/script.js"></script>
     <script src="./js/modalCashier.js"></script>
     <script src="./js/personal.js"></script>

@@ -44,6 +44,7 @@ body {
 .jackpots__first h2 {
   color: white;
   font-size: 48px;
+  margin-top: 120px;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -56,14 +57,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 120px;
+  margin-top: 60px;
 }
 
 .jackpots__bottom p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   font-family: Montserrat, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 21.6px;
   word-wrap: break-word;
 }
@@ -78,6 +79,7 @@ body {
 
 .jackpots__bottom-number {
   overflow: hidden;
+  font-weight: 600;
   display: inline-block;
 }
 
