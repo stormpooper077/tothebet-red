@@ -127,8 +127,7 @@
 
 .slot-machine {
   width: 100%;
-  max-width: 180px;
-  aspect-ratio: 1/1.3;
+  max-width: 230px;
   position: relative;
   transition: transform 0.25s ease;
   display: flex;
@@ -148,13 +147,18 @@
   font-weight: 600;
   color: var(--white);
   text-align: left;
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 24px);
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .slot-machine__image-container {
   position: relative;
-  overflow: hidden;
-  height: 100%;
-  border-radius: 4px;
+  background-color: #161c23;
+  border-radius: 4px 4px 0 0;
 }
 
 .slot-machine__image {
@@ -167,6 +171,7 @@
 .slot-machine__hover-overlay {
   position: absolute;
   top: 0;
+  border-radius: 4px 4px 0 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -230,12 +235,20 @@
 }
 
 .slot-machine__footer {
-  display: none;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 4px 4px;
+  background-color: #161c23;
   color: var(--white);
   justify-content: space-between;
-  padding-bottom: 4px;
-  padding-top: 8px;
-  width: 100%;
+  padding: 8px 8px 8px 8px;
+}
+
+.slot-machine__like {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-grid-column > .swiper-wrapper {
@@ -297,4 +310,17 @@
     max-width: 120px;
     aspect-ratio: 2/4;
   }
+}
+
+.like-icon {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+.like-icon:hover .like-path {
+    fill: #fff; 
+}
+
+.like-icon.clicked .like-path {
+    fill: #fff;
 }

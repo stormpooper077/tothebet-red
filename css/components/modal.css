@@ -39,7 +39,7 @@
 	display: flex;
 	width: 960px;
 	flex-direction: column;
-	border-radius: 16px;
+	border-radius: 4px;
 	background: #161c23;
 	position: absolute;
 	left: 50%;
@@ -183,7 +183,7 @@
 	height: 60px;
 	align-items: center;
 	justify-content: center;
-	border-radius: 12px;
+	border-radius: 4px;
 	background-color: #293340;
 	position: relative;
 	cursor: pointer;
@@ -199,7 +199,7 @@
 }
 
 .modal__content-slots_list {
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	display: grid;
 	align-items: center;
 	gap: 10px;

@@ -106,7 +106,7 @@
 .discount__slide {
   display: flex;
   flex-direction: column;
-  border-radius: 18px;
+  border-radius: 4px;
   justify-content: space-between;
   height: 480px;
   background: var(--color-gradient-3);
@@ -116,7 +116,7 @@
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  border-radius: 18px 18px 0 0;
+  border-radius: 4px 4px 0 0;
   color: var(--white);
   padding: 13px 16px;
 }
@@ -154,11 +154,11 @@
 
 .discount__slide-buttons a {
   padding: 6px 10px;
-  border-radius: 6px;
+  border-radius: 4px;
   background-color: rgb(255, 255, 255, 0.1);
   color: var(--white);
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
