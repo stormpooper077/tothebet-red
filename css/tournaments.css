@@ -81,7 +81,7 @@
 
 .tournaments__image {
 	width: 685px;
-	border-radius: 10px;
+	border-radius: 4px;
 }
 
 .tournaments__slide-right {
@@ -184,7 +184,7 @@
 	display: flex !important;
 	gap: 16px;
 	background-color: #161c23;
-	border-radius: 16px;
+	border-radius: 4px;
 }
 
 @media (max-width: 1432px) {
