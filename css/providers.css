@@ -97,7 +97,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 90px !important;
-	border-radius: 12px;
+	border-radius: 4px;
 	background-color: #161c23;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
