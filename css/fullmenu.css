@@ -18,7 +18,7 @@
 	transition: 0.2s ease-in-out;
 	cursor: pointer;
 	background-color: var(--navbar-dark-primary);
-	border-radius: 16px;
+	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -142,7 +142,7 @@
 		text-align: center;
 		flex: 1 1 calc(13.333% - 10px);
 		height: 80px;
-		border-radius: 5px;
+		border-radius: 4px;
 	}
 
 	.fullmenu__content-title {
@@ -161,7 +161,7 @@
 		flex-shrink: 0;
 		text-align: center;
 		height: 80px;
-		border-radius: 5px;
+		border-radius: 4px;
 	}
 
 	.fullmenu__bottom-overflow {
@@ -208,7 +208,7 @@
 	.fullmenu__top-box:last-child {
 		flex: 0 0 auto;
 		text-align: center;
-		border-radius: 5px;
+		border-radius: 4px;
 	}
 
 	.fullmenu__top-box {
