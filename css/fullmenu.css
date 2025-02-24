@@ -11,7 +11,7 @@
 .fullmenu__content {
 	align-items: center;
 	display: flex;
-	gap: 10px;
+	gap: 8px;
 }
 
 .fullmenu__content-box {
@@ -80,7 +80,7 @@
 .fullmenu__top {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 8px;
 	justify-content: space-between;
 }
 
