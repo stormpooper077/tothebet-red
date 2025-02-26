@@ -30,7 +30,7 @@
 }
 
 .slider__content {
-	height: 265px;
+	height: 305px;
 	padding: 24px 0 24px 26px;
 	display: flex;
 	align-items: flex-start;
@@ -169,7 +169,7 @@
 		height: 210px;
 	}
 	.slider__content {
-		height: 185px;
+		height: 210px;
 	}
 	.slider__content img{
 		right: -200px;
@@ -181,7 +181,7 @@
 	}
 	.slider__content {
 		padding: 12px 0 12px 12px;
-		height: 150px !important;
+		height: 175px !important;
 	}
 	.swiper-pagination-bullet {
 		height: 6px !important;
