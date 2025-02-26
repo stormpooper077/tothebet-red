@@ -30,7 +30,7 @@
 }
 
 .slider__content {
-	height: 265px;
+	height: 305px;
 	padding: 24px 0 24px 26px;
 	display: flex;
 	align-items: flex-start;
@@ -169,7 +169,7 @@
 		height: 210px;
 	}
 	.slider__content {
-		height: 185px;
+		height: 210px;
 	}
 	.slider__content img{
 		right: -200px;
