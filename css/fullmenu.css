@@ -133,12 +133,124 @@
 }
 
 @media (max-width: 1700px) {
-	.fullmenu__bottom {
-			overflow-x: scroll;
-			cursor: grab;
-			width: 100%;
-			display: flex;
+	.fullmenu__content {
+		display: flex;
+		gap: 0;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
 	}
+
+	.fullmenu__top {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+
+	.fullmenu__bottom {
+		padding: 10px 0;
+		width: 100%;
+		display: flex; 
+	}
+
+	.fullmenu__bottom-overflow {
+		display: flex; 
+		justify-content: space-between; 
+	}
+
+	.fullmenu__content-box {
+		white-space: nowrap;
+		text-align: center;
+		flex: 1 1 calc(13.333% - 10px);
+		height: 80px;
+		border-radius: 4px;
+	}
+
+	.fullmenu__content-title {
+		font-size: 10px;
+	}
+	.fullmenu__top-box .fullmenu__content-icon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.fullmenu__top-box:nth-child(2) .fullmenu__content-title {
+		display: none;
+	}
+
+	.fullmenu__content-box {
+		flex-shrink: 0;
+		text-align: center;
+		height: 80px;
+		border-radius: 4px;
+	}
+
+	.fullmenu__bottom-overflow {
+		width: 100%;
+	}
+
+	.fullmenu__top-box {
+		gap: 8px;
+		background-color: #293340;
+		border: 1px solid #293340;
+		flex-direction: row;
+		height: 40px;
+		padding: 8px;
+		justify-content: flex-start;
+	}
+
+	.fullmenu__top-box:nth-child(2) {
+		justify-content: center;
+	}
+
+	.fullmenu__top-box .fullmenu__content-title {
+		font-size: 12px;
+	}
+
+	.fullmenu__content-icon {
+		width: 36px;
+		height: 36px;
+	}
+
+	.fullmenu {
+		margin-top: 16px;
+	}
+
+	.fullmenu__top {
+		display: flex;
+		justify-content: flex-start;
+		gap: 10px;
+	}
+
+	.fullmenu__top-box:nth-child(1) {
+		width: 100%;
+	}
+
+	.fullmenu__top-box:last-child {
+		flex: 0 0 auto;
+		text-align: center;
+		border-radius: 4px;
+	}
+
+	.fullmenu__top-box {
+		max-width: none;
+	}
+
+	.fullmenu__top {
+		display: flex;
+		width: 100%;
+	}
+
+	.fullmenu__top-box:first-child {
+		flex-grow: 1;
+		width: 80%;
+	}
+
+	.fullmenu__top-box:last-child {
+		flex-shrink: 0;
+		width: 20%;
+	}
+}
 }
 @media (max-width: 1024px) {
 	.fullmenu__content {
