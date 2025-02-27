@@ -132,7 +132,7 @@
 	gap: 10px;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 2500px) {
 	.fullmenu__content {
 		display: flex;
 		gap: 0;
@@ -252,7 +252,7 @@
 		width: 20%;
 	}
 }
-}
+
 @media (max-width: 1024px) {
 	.fullmenu__content {
 		display: flex;
