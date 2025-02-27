@@ -9,9 +9,11 @@
 }
 
 .fullmenu__content {
-	align-items: center;
 	display: flex;
-	gap: 8px;
+	gap: 0;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
 }
 
 .fullmenu__content-box {
