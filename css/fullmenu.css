@@ -137,6 +137,7 @@
 			overflow-x: scroll;
 			cursor: grab;
 			width: 100%;
+			display: flex;
 	}
 }
 @media (max-width: 1024px) {
