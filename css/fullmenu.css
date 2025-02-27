@@ -136,6 +136,7 @@
 	.fullmenu__bottom {
 			overflow-x: scroll;
 			cursor: grab;
+			width: 100%;
 	}
 }
 @media (max-width: 1024px) {
