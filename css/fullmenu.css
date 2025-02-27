@@ -93,7 +93,7 @@
 
 .fullmenu__bottom-overflow {
 	display: flex;
-	gap: 0px;
+	gap: 5px;
 }
 
 .fullmenu__content-box__active .fullmenu__content-icon {
@@ -182,7 +182,6 @@
 	.fullmenu__content-box {
 		flex-shrink: 0;
 		text-align: center;
-		height: 80px;
 		border-radius: 4px;
 	}
 
@@ -209,8 +208,8 @@
 	}
 
 	.fullmenu__content-icon {
-		width: 36px;
-		height: 36px;
+		width: 24px;
+		height: 24px;
 	}
 
 	.fullmenu {
