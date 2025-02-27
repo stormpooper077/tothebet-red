@@ -26,14 +26,23 @@
 	gap: 4px;
 	border: 1px solid var(--navbar-dark-primary);
 	width: 115px;
-	height: 100px;
+	height: 80px;
+
+
+    white-space: nowrap;
+	flex: 1 1 calc(13.333% - 10px);
+	flex-shrink: 0;
+	text-align: center;
 }
 
 .fullmenu__top-box {
-	gap: 6px;
-	max-width: 120px;
-    background-color: #000;
-    border: 1px solid #000;
+	gap: 8px;
+	background-color: #293340;
+	border: 1px solid #293340;
+	flex-direction: row;
+	height: 40px;
+	padding: 8px;
+	justify-content: flex-start;
 }
 
 .fullmenu__top-box .fullmenu__content-icon {
@@ -228,12 +237,12 @@
 
 	.fullmenu__top-box:first-child {
 		flex-grow: 1;
-		width: 70%;
+		width: 80%;
 	}
 
 	.fullmenu__top-box:last-child {
 		flex-shrink: 0;
-		width: 50px;
+		width: 20%;
 	}
 }
 
