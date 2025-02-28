@@ -180,7 +180,7 @@
 	}
 
 	.fullmenu__content-box {
-		flex-shrink: 0;
+		flex-shrink: 1;
 		text-align: center;
 		border-radius: 4px;
 	}
