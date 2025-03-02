@@ -20,24 +20,23 @@
 	transition: 0.2s ease-in-out;
 	cursor: pointer;
 	background-color: var(--navbar-dark-primary);
-	border-radius: 4px;
 	display: flex;
-	flex-direction: ;
 	align-items: center;
 	justify-content: center;
 	gap: 4px;
-	border: 1px solid var(--navbar-dark-primary);
-	
 	height: 60px;
-
-
-    white-space: nowrap;
-	flex: 1 1 calc(13.333% - 10px);
+	white-space: nowrap;
+	flex: 1 1 calc(11.111% - 10px); /* Adjusted for 9 items */
 	flex-shrink: 1;
 	text-align: center;
 }
 
+.fullmenu__content-box:hover {
+	background-color: red; /* Add your desired hover color here */
+}
+
 .fullmenu__top-box {
+	border-radius: 4px;
 	gap: 8px;
 	background-color: #293340;
 	border: 1px solid #293340;
@@ -73,14 +72,6 @@
 	font-weight: 500;
 }
 
-.fullmenu__content-box:hover .fullmenu__content-title {
-	color: red;
-}
-
-.fullmenu__content-box:hover .fullmenu__content-icon {
-	filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(6932%) hue-rotate(0deg) brightness(100%) contrast(124%);
-  }
-
   
 .fullmenu__content-box__active {
 	border: 1px solid red;
@@ -93,7 +84,7 @@
 
 .fullmenu__bottom-overflow {
 	display: flex;
-	gap: 5px;
+	gap: 0px;
 }
 
 .fullmenu__content-box__active .fullmenu__content-icon {
@@ -164,7 +155,6 @@
 		text-align: center;
 		flex: 1 1 calc(13.333% - 10px);
 		height: 60px;
-		border-radius: 4px;
 	}
 
 	.fullmenu__content-title {
@@ -175,14 +165,9 @@
 		height: 16px;
 	}
 
-	.fullmenu__top-box:nth-child(2) .fullmenu__content-title {
-		display: none;
-	}
-
 	.fullmenu__content-box {
 		flex-shrink: 1;
 		text-align: center;
-		border-radius: 4px;
 	}
 
 	.fullmenu__bottom-overflow {

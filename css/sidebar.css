@@ -70,6 +70,7 @@
 }
 
 .nav-button {
+  width: 100%;
   padding: 10px;
   position: relative;
   display: flex;
@@ -84,10 +85,7 @@
 .nav-button img {
 	transition: var(--transition);
 }
-  
-.nav-button:hover img {
-	filter: brightness(50%) saturate(100%) invert(20%) sepia(100%) saturate(7000%) hue-rotate(0deg) brightness(90%) contrast(120%);
-  }
+
 
 .nav-button span,
 .nav-button__promo-counter,
@@ -154,10 +152,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-}
-
-.nav-button:hover > .nav-button__right span {
-  color: red;
 }
 
 .nav-jackpot {
@@ -262,13 +256,14 @@
 }
 
 #nav-bar.collapsed #nav-content {
-  width: 44px;
+  width: 100%;
 }
 
 #nav-bar.collapsed .nav-button {
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 #nav-bar.collapsed .nav-button__right img {

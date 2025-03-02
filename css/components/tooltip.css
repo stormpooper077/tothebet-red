@@ -75,7 +75,7 @@
   transform: translateY(50%);
 }
 [data-tooltip^="right"][aria-label]::before {
-  left: calc(24px + 100%);
+  left: calc(16px + 100%);
   bottom: 50%;
   transform: translateY(50%);
 }
@@ -87,7 +87,7 @@
   border-bottom-width: 0.5rem;
   border-bottom-color: #0000;
   bottom: 50%;
-  left: calc(16px + 100%);
+  left: calc(8px + 100%);
   transform: translateY(50%);
 }
 
