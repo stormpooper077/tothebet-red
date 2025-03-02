@@ -82,6 +82,10 @@
   justify-content: space-between;
 }
 
+.nav-button-active {
+  background-color: red;
+}
+
 .nav-button img {
 	transition: var(--transition);
 }
@@ -265,6 +269,8 @@
   justify-content: center;
   width: 100%;
 }
+
+
 
 #nav-bar.collapsed .nav-button__right img {
   width: 24px;
