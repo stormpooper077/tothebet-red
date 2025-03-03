@@ -142,7 +142,7 @@ function initializeNavBar() {
   const img = toggleMenuBtn.querySelector("img");
   if (img) {
     img.src = burgerIcon;
-    img.style.transition = "transform 0.3s ease";
+    img.style.transition = "transform 0.1s ease";
   }
 
   toggleMenuBtn.addEventListener("click", () => {
