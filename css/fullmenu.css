@@ -44,8 +44,7 @@
 .fullmenu__top-box {
 	border-radius: 4px;
 	gap: 8px;
-	background-color: #293340;
-	border: 1px solid #293340;
+	border: 1px solid #fff;
 	flex-direction: row;
 	height: 40px;
 	padding: 8px;
@@ -183,8 +182,6 @@
 
 	.fullmenu__top-box {
 		gap: 8px;
-		background-color: #293340;
-		border: 1px solid #293340;
 		flex-direction: row;
 		height: 40px;
 		padding: 8px;
@@ -297,8 +294,6 @@
 
 	.fullmenu__top-box {
 		gap: 8px;
-		background-color: #293340;
-		border: 1px solid #293340;
 		flex-direction: row;
 		height: 40px;
 		padding: 8px;
