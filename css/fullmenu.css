@@ -24,7 +24,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 4px;
-	height: 60px;
+	height: 50px;
 	white-space: nowrap;
 	flex: 1 1 calc(11.111% - 10px); /* Adjusted for 9 items */
 	flex-shrink: 1;
@@ -161,7 +161,7 @@
 		white-space: nowrap;
 		text-align: center;
 		flex: 1 1 calc(13.333% - 10px);
-		height: 60px;
+		height: 50px;
 	}
 
 	.fullmenu__content-title {
@@ -271,10 +271,11 @@
 	}
 
 	.fullmenu__content-box {
+		flex-shrink: 0;
 		white-space: nowrap;
 		text-align: center;
 		flex: 1 1 calc(13.333% - 10px);
-		height: 60px;
+		height: 50px;
 		border-radius: 4px;
 	}
 
@@ -288,13 +289,6 @@
 
 	.fullmenu__top-box:nth-child(2) .fullmenu__content-title {
 		display: none;
-	}
-
-	.fullmenu__content-box {
-		flex-shrink: 0;
-		text-align: center;
-		height: 60px;
-		border-radius: 4px;
 	}
 
 	.fullmenu__bottom-overflow {
