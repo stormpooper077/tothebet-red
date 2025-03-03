@@ -37,6 +37,7 @@
 
 .fullmenu__content-box-active {
 	background: linear-gradient(90.93deg, #E30C1D 4.48%, #A30C18 96.8%); /* Add your desired hover color here */
+	border-radius: 4px;
 }
 
 .fullmenu__top-box {
@@ -88,7 +89,8 @@
 
 .fullmenu__bottom-overflow {
 	display: flex;
-	gap: 0px;
+	gap: 8px;
+    background-color: #161c23;
 }
 
 .fullmenu__content-box__active .fullmenu__content-icon {
