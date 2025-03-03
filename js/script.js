@@ -130,7 +130,30 @@ function initializeEventListeners() {
   });
 }
 
+function initializeNavBar() {
+  const navBar = document.getElementById("nav-bar");
+  const toggleMenuBtn = document.getElementById("toggle-menu-btn");
+  const burgerIcon = "/assets/svg/burger-menu.svg";
+  const closeIcon = "/assets/svg/close-burger-menu.svg";
 
+  if (!navBar || !toggleMenuBtn) return;
+
+  navBar.classList.add("collapsed");
+  const img = toggleMenuBtn.querySelector("img");
+
+  toggleMenuBtn.addEventListener("click", () => {
+    const isExpanded = navBar.classList.contains("expanded");
+
+    if (isExpanded) {
+      navBar.classList.remove("expanded");
+      navBar.classList.add("collapsed");
+    } else {
+      navBar.classList.remove("collapsed");
+      navBar.classList.add("expanded");
+
+    }
+  });
+}
 
 function initializeDropdowns() {
   const dropdowns = document.querySelectorAll(".dropdown");
