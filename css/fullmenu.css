@@ -32,7 +32,11 @@
 }
 
 .fullmenu__content-box:hover {
-	background-color: red; /* Add your desired hover color here */
+	background: linear-gradient(90.93deg, #E30C1D 4.48%, #A30C18 96.8%); /* Add your desired hover color here */
+}
+
+.fullmenu__content-box-active {
+	background: linear-gradient(90.93deg, #E30C1D 4.48%, #A30C18 96.8%); /* Add your desired hover color here */
 }
 
 .fullmenu__top-box {
