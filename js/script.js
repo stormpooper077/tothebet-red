@@ -140,11 +140,6 @@ function initializeNavBar() {
 
   navBar.classList.add("collapsed");
   const img = toggleMenuBtn.querySelector("img");
-  if (img) {
-    img.src = burgerIcon;
-    img.style.transform = "rotate(0deg)";
-    img.style.transition = "transform 0.3s ease";
-  }
 
   toggleMenuBtn.addEventListener("click", () => {
     const isExpanded = navBar.classList.contains("expanded");
@@ -152,21 +147,10 @@ function initializeNavBar() {
     if (isExpanded) {
       navBar.classList.remove("expanded");
       navBar.classList.add("collapsed");
-
-      const img = toggleMenuBtn.querySelector("img");
-      if (img) {
-        img.src = burgerIcon;
-        img.style.transform = "rotate(0deg)";
-      }
     } else {
       navBar.classList.remove("collapsed");
       navBar.classList.add("expanded");
 
-      const img = toggleMenuBtn.querySelector("img");
-      if (img) {
-        img.src = closeIcon;
-        img.style.transform = "rotate(90deg)";
-      }
     }
   });
 }

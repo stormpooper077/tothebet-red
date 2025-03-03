@@ -91,7 +91,7 @@
   font-size: 16px;
   color: var(--white);
   display: flex;
-  background: linear-gradient(90.93deg, #4d030a 4.48%, #A30C18 96.8%);
+  background: linear-gradient(90.93deg, #E30C1D 4.48%, #A30C18 96.8%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,8 +160,8 @@
 }
 
 .header__top-language_left img {
-  width: 24px;
-  height: 24px;
+  width: 46px;
+  height: 40px;
 }
 
 .header__drop {

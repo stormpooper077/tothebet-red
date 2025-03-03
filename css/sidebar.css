@@ -14,7 +14,6 @@
 }
 
 .switcher {
-  transform: rotate(180deg);
   height: 67px;
   width: 70px;
   display: flex;
@@ -83,7 +82,7 @@
 }
 
 .nav-button-active {
-  background-color: red;
+  background: linear-gradient(90.93deg, #E30C1D 4.48%, #A30C18 96.8%);
 }
 
 .nav-button img {
