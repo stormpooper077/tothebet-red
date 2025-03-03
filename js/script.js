@@ -142,7 +142,6 @@ function initializeNavBar() {
   const img = toggleMenuBtn.querySelector("img");
   if (img) {
     img.src = burgerIcon;
-    img.style.transform = "rotate(0deg)";
     img.style.transition = "transform 0.3s ease";
   }
 
@@ -156,7 +155,6 @@ function initializeNavBar() {
       const img = toggleMenuBtn.querySelector("img");
       if (img) {
         img.src = burgerIcon;
-        img.style.transform = "rotate(0deg)";
       }
     } else {
       navBar.classList.remove("collapsed");
@@ -165,7 +163,6 @@ function initializeNavBar() {
       const img = toggleMenuBtn.querySelector("img");
       if (img) {
         img.src = closeIcon;
-        img.style.transform = "rotate(90deg)";
       }
     }
   });
