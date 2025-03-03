@@ -51,6 +51,11 @@
 	justify-content: flex-start;
 }
 
+.fullmenu__top-box:hover {
+	background-color: #161c23;
+
+}
+
 .fullmenu__top-box:first-child {
 	flex-grow: 1;
 	width: 80%;
