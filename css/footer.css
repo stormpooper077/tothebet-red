@@ -43,7 +43,7 @@
 
 .footer-top__text div {
   align-items: start;
-  width: 400px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -57,7 +57,7 @@
 .footer-top__right {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
 }
