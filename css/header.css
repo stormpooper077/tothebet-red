@@ -103,8 +103,7 @@
 }
 
 .header__content-button:first-child {
-  background-image: none;
-  border: 1px solid red;
+  background-color: rgb(48, 48, 48, 1);
 }
 
 .header__content-button:hover {
