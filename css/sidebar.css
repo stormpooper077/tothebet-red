@@ -23,6 +23,10 @@
   cursor: pointer;
 }
 
+.switcher:hover {
+  background-color: rgb(48, 48, 48, 1);
+}
+
 #nav-bar.collapsed {
   gap: 60px;
 }

@@ -139,11 +139,8 @@
   max-width: 160px;
   width: 100%;
   flex-direction: row;
-  background-color: #161c23;
-  border-radius: 12px;
   justify-content: space-between;
   display: flex;
-  border: 1px solid #161c23;
   align-items: center;
   cursor: pointer;
   padding: 12px 12px;
