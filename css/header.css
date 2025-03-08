@@ -139,12 +139,19 @@
   max-width: 160px;
   width: 100%;
   flex-direction: row;
+  border-radius: 12px;
   justify-content: space-between;
   display: flex;
   align-items: center;
   cursor: pointer;
   padding: 12px 12px;
   transition: 0.2s ease-in-out;
+}
+
+.header__top-language:hover {
+  
+  background-color: #161c23;
+  border: 1px solid #161c23;
 }
 
 .header__top-language_left {
