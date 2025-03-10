@@ -20,6 +20,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding-left: 23px;
+  padding-right: 23px;
 }
 
 .switcher:hover {
