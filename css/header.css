@@ -148,8 +148,7 @@
 }
 
 .header__top-language:hover {
-  
-  background-color: #161c23;
+  background-color: rgb(48, 48, 48, 1);
 }
 
 .header__top-language_left {
