@@ -19,8 +19,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
   cursor: pointer;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.switcher:hover {
+  background-color: rgb(48, 48, 48, 1);
 }
 
 #nav-bar.collapsed {
