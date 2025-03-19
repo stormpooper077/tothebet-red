@@ -341,22 +341,11 @@
         <div class="fullmenu__wrapper">
           <div class="fullmenu__content">
             <div class="fullmenu__top">
-              <button
-                data-modal-open="modal1"
-                class="fullmenu__top-box fullmenu__content-box"
-              >
-                <img
-                  src="/assets/svg/Search.svg"
-                  class="fullmenu__content-icon"
-                />
-                <p class="fullmenu__content-title" style="font-weight: 400; opacity: ;">GAMES, CATEGORIES, PROVIDERS</p>
+              <button data-modal-open="modal1" class="fullmenu__top-box fullmenu__content-box">
+                <img src="/assets/svg/Search.svg" class="fullmenu__content-icon" />
+                <p class="fullmenu__content-title" style="font-weight: 400; opacity: 1;">GAMES, CATEGORIES, PROVIDERS</p>
               </button>
-              <button
-                id="modalProviders"
-                data-modal-open="modal2"
-                class="fullmenu__top-box fullmenu__top-box-prov fullmenu__content-box"
-                style="border: 1px solid #161c23;"
-              >
+              <button id="modalProviders" data-modal-open="modal2" class="fullmenu__top-box fullmenu__top-box-prov fullmenu__content-box" style="border: 1px solid #161c23;">
                 <p class="fullmenu__content-title">Провайдеры</p>
               </button>
             </div>
@@ -1851,11 +1840,12 @@
         <div id="modalBackdrop1" class="modal-overlay"></div>
       </div>
     </main>
+
     <footer class="footer">
       <div class="footer-wrapper">
         <div class="footer-content">
           <div class="footer-top">
-            <div class="footer-top__text">
+            <div class="footer-top__text" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
               <div>
                 <a href="/privacy-policy.html">Privacy policy</a>
                 <a href="#">Contact Us</a>
@@ -1870,34 +1860,6 @@
                 <a href="#">Responsible Gaming</a>
                 <a href="#">Bonus Terms and Conditions</a>
                 <a href="#">Faq</a>
-              </div>
-            </div>
-            <div class="footer-top__right">
-              <div class="dropdown">
-                <button class="dropdown footer-top__language">
-                  <div class="footer-top__language-left">
-                    <img src="/assets/flags/RU.svg" alt="" />Ru
-                  </div>
-                  <img
-                    class="footer-top__language-arrow"
-                    src="/assets/svg/DropdownArrow.svg"
-                    alt=""
-                  />
-                </button>
-                <div id="dropdownfooter" class="dropdown-drop">
-                  <button href="#cards" class="dropdown-drop__item">
-                    <img src="/assets/flags/KZ.svg" alt="" />Kz
-                  </button>
-                  <button href="#cards" class="dropdown-drop__item">
-                    <img src="/assets/flags/AZ.svg" alt="" />Az
-                  </button>
-                </div>
-              </div>
-              <div class="footer-top__download">
-                <button class="footer-top__download-Android">
-                  <img src="/assets/svg/Footer/Android.svg" alt="Android" />
-                  <p>Приложение<span>для Android</span></p>
-                </button>
               </div>
             </div>
           </div>
