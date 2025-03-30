@@ -433,4 +433,29 @@ function setupCashierModal() {
   });
 }
 
+// Dropdown functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const dropdownContent = dropdown.querySelector('.dropdown-drop');
+        let timeoutId;
+        
+        dropdown.addEventListener('mouseenter', () => {
+            clearTimeout(timeoutId);
+            if (dropdownContent) {
+                dropdownContent.style.display = 'block';
+            }
+        });
+        
+        dropdown.addEventListener('mouseleave', () => {
+            timeoutId = setTimeout(() => {
+                if (dropdownContent) {
+                    dropdownContent.style.display = 'none';
+                }
+            }, 200); // Небольшая задержка перед закрытием
+        });
+    });
+});
+
 initializeEventListeners();
