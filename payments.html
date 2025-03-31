@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payments - To the moon</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/svg/LogoDark.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/payments.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <aside class="nav-bar collapsed" id="nav-bar">
+      <div id="nav-content">
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Джекпот"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/categ_newgames.svg" alt="Chat" />
+            <span>Новые игры</span>
+          </div>
+        </a>
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Hot"
+          class="nav-button data-tooltip__bottom nav-button-active"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/categ_topgames.svg" alt="Chat" />
+            <span>Горячие игры</span>
+          </div>
+        </a>
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Slots"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/categor_slots.svg" alt="Chat" />
+            <span>Слоты</span>
+          </div>
+        </a>
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Live"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/dealer.svg" alt="Chat" style="transform: scale(1.1);" />
+            <span>Live игры</span>
+          </div>
+        </a>
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Roulette"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Sidebar/Dropdown Menu/Roullete.svg" alt="Chat" style="transform: scale(1.2);" />
+            <span>Рулетка</span>
+          </div>
+        </a>
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Crash"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/planenew.svg" alt="Chat" style="transform: rotate(-80deg);" />
+            <span>Crash игры</span>
+          </div>
+        </a>
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Card"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/icon_tablegames.svg" alt="Chat" />
+            <span>Карточные игры</span>
+          </div>
+        </a>
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Lotto"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/lottonew.svg" alt="Chat" style="transform: scale(1.1);" />
+            <span>Лото</span>
+          </div>
+        </a>
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Arcade"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/icon_videopocker.svg" alt="Chat" />
+            <span>Аркадные игры</span>
+          </div>
+        </a>
+        <!--<a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Vsport"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img
+              src="/assets/svg/Sidebar/Dropdown Menu/VSport.svg"
+              alt="Chat"
+            />
+            <span>Виртуальный спорт</span>
+          </div>
+        </a>-->
+        <!--<a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Other"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Sidebar/Dropdown Menu/Other.svg" alt="Chat" />
+            <span>Прочие игры</span>
+          </div>
+        </a>-->
+        <a
+          href="jackpots.html"
+          data-tooltip="right 150"
+          aria-label="Джекпот"
+          class="nav-button data-tooltip__bottom"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/categor_jackpot.svg" alt="Chat" />
+            <span>Джекпоты</span>
+          </div>
+        </a>
+        <a
+          href="bonuses.html"
+          data-tooltip="right 150"
+          aria-label="Промо"
+          class="nav-button"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/icon_promotions.svg" alt="Chat" />
+            <span>Промо акции</span>
+          </div>
+        </a>
+        <!--<a
+          href="promo.html"
+          data-tooltip="right 150"
+          aria-label="Программа лояльности"
+          class="nav-button"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Sidebar/Loyalty.svg" alt="Chat" />
+            <span>Программа лояльности</span>
+          </div>
+        </a>-->
+        <a
+          href="vip-program.html"
+          data-tooltip="right 150"
+          aria-label="VIP программа"
+          class="nav-button"
+        >
+          <div class="nav-button__right">
+            <img src="/assets/svg/Sidebar/VIP.svg" style="transform: scale(1.3);" alt="Chat" />
+            <span>VIP программа</span>
+          </div>
+        </a>
+        <div data-tooltip="right 150" aria-label="Live чат" class="nav-button">
+          <div class="nav-button__right">
+            <img src="/assets/svg/Newicons/newsupport3.svg" style="transform: scale(1.2);" alt="Chat" />
+            <span>Live чат</span>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown nav-dropdown">
+        <button class="dropdown header__top-language">
+          <div class="header__top-language_left">
+            <img src="/assets/flags/RU.svg" alt="" />Ru
+          </div>
+          <img
+            class="footer-top__language-arrow"
+            src="/assets/svg/DropdownArrow.svg"
+            alt=""
+          />
+        </button>
+        <div id="dropdowntest" class="header__drop dropdown-drop">
+          <button href="#cards" class="dropdown-drop__item header__drop-item">
+            <img src="/assets/flags/KZ.svg" alt="" />Kz
+          </button>
+          <button href="#cards" class="dropdown-drop__item">
+            <img src="/assets/flags/AZ.svg" alt="" />Az
+          </button>
+        </div>
+      </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <div class="header-links">
+      <header class="header">
+        <button class="switcher" id="toggle-menu-btn">
+          <img src="/assets/svg/burger-menu.svg" alt="" />
+        </button>
+        <div class="header__wrapper">
+          <div class="header__content">
+            <a href="https://tothebet-red.vercel.app/" class="header__content-left">
+              <img src="/assets/svg/LogoDark.svg" alt="Logo" />
+            </a>
+            <div class="header-links__content">
+              <a href="#" class="header-link">SLOTS</a>
+              <a href="#" class="header-link">LIVE</a>
+              <a href="#" class="header-link">CRASH</a>
+              <a href="#" class="header-link">CARD</a>
+              <a href="#" class="header-link">ROULETTE</a>
+            </div>
+            <div class="header__content-right">
+              <div class="dropdown header__dropdown">
+                <button class="dropdown header__top-language">
+                  <div class="header__top-language_left">
+                    <img src="/assets/flags/RU.svg" alt="" />
+                  </div>
+                  
+                </button>
+                <div id="dropdowntest" class="header__drop dropdown-drop">
+                  <button
+                    href="#cards"
+                    class="dropdown-drop__item header__drop-item"
+                  >
+                    <img src="/assets/flags/KZ.svg" alt="" />Kz
+                  </button>
+                  <button href="#cards" class="dropdown-drop__item">
+                    <img src="/assets/flags/AZ.svg" alt="" />Az
+                  </button>
+                </div>
+              </div>
+              <div class="header__content-buttons">
+                <button
+                  data-modal-open="modal3"
+                  class="header__content-button"
+                  id="openAuthModal"
+                >
+                  <img src="/assets/svg/Login.svg" alt="" />Вход
+                </button>
+                <button
+                  id="openRegModal"
+                  data-modal-open="modal3"
+                  class="header__content-button shake"
+                >
+                  <img src="/assets/svg/Registration.svg" alt="" />Регистрация
+                </button>
+                <button class="burger-menu" id="burger-menu-btn">
+                  <img
+                    src="/assets/svg/burger-menu.svg"
+                    alt="Menu"
+                    id="burger-icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+    </div>
+    <main id="main">
+      <section class="payments">
+        <div class="payments__wrapper">
+          <div class="payments__content">
+            <h1 class="payments__title">Banking</h1>
+            
+            <!-- Deposit Options Section -->
+            <div class="payments__section">
+              <h2 class="payments__section-title">Deposit Options</h2>
+              <p class="payments__section-description">
+                Here you can find a list of payment methods available for funding your account, and choose the one that suits you best.
+              </p>
+              <p class="payments__section-note">
+                Even though we make every effort to accept your deposit instantly, the exact time of the transaction depends on the processing time of your bank or payment operator.
+              </p>
+              
+              <div class="payments__methods">
+                <div class="payments__method">
+                  <img src="/assets/svg/payments/visa.svg" alt="Visa" />
+                  <span>Visa</span>
+                </div>
+                <div class="payments__method">
+                  <img src="/assets/svg/payments/mastercard.svg" alt="Mastercard" />
+                  <span>Mastercard</span>
+                </div>
+                <div class="payments__method">
+                  <img src="/assets/svg/payments/crypto.svg" alt="Crypto" />
+                  <span>Crypto</span>
+                </div>
+                <div class="payments__method">
+                  <img src="/assets/svg/payments/usdt.svg" alt="USDT" />
+                  <span>USDT</span>
+                </div>
+                <div class="payments__method">
+                  <img src="/assets/svg/payments/flexepin.svg" alt="Flexepin" />
+                  <span>Flexepin</span>
+                </div>
+              </div>
+
+              <div class="payments__disclaimers">
+                <p>* Red Dog Casino does not charge any deposit fees for Visa, MC, BTC, Litecoin, Flexepin and shall not be held liable for any fees levied by third-party banking organizations involved in sending and/or processing customer deposits.</p>
+                <p>** ETH and Tether (USDT) may carry additional processing fees. All details can be viewed upon transaction in Cashier directly. The casino supports ERC20 network only.</p>
+                <p>*** Minimum deposit amount for Tether (USDT) - is different for variable currencies: 40 for USD, 40 for EUR, 60 for AUD</p>
+              </div>
+            </div>
+
+            <!-- Payout Options Section -->
+            <div class="payments__section">
+              <h2 class="payments__section-title">Payout Options</h2>
+              <p class="payments__section-description">
+                This list of payment methods is set to help you find the best way to cash out your winnings as quickly and conveniently as possible. Here you can see all the details about the limits* and time frames of each method available.
+              </p>
+              <p class="payments__section-note">
+                Please keep in mind that you have to complete the KYC process before requesting your first cashout. KYC process must be completed for each card used to fund your Casino Account.
+              </p>
+
+              <div class="payments__methods">
+                <div class="payments__method">
+                  <img src="/assets/svg/payments/credit-card.svg" alt="Credit Card" />
+                  <span>Credit Card</span>
+                </div>
+                <div class="payments__method">
+                  <img src="/assets/svg/payments/bank-wire.svg" alt="Bank Wire" />
+                  <span>Bank Wire</span>
+                </div>
+                <div class="payments__method">
+                  <img src="/assets/svg/payments/bitcoin.svg" alt="Bitcoin" />
+                  <span>Bitcoin</span>
+                </div>
+                <div class="payments__method">
+                  <img src="/assets/svg/payments/vip-payouts.svg" alt="VIP Payouts" />
+                  <span>VIP Payouts</span>
+                </div>
+              </div>
+
+              <div class="payments__disclaimers">
+                <p>* Red Dog Casino does not charge any payout fees whatsoever, and shall not be held liable for any fees levied by third-party banking organizations involved in receiving and/or processing customer payouts.</p>
+                <p>** All the payout options might be subjected to the additional processing time as per international business practice.</p>
+                <p>*** If the currency chosen by the Customer upon registration does not match the provided bank account currency, the bank will charge an exchange fee and process the transaction according to its current rates. The casino is not involved in the aforementioned process and cannot affect it in any way.</p>
+              </div>
+            </div>
+
+            <!-- Validation Documents Section -->
+            <div class="payments__section">
+              <h2 class="payments__section-title">Validation Documents</h2>
+              <p class="payments__section-description">
+                In the interests of secure gaming and safe payout validation, customers will be requested to submit several documents listed below. Red Dog Casino guarantees the utter privacy of all the documents and sensitive data that the Casino is entrusted with.
+              </p>
+              <p class="payments__section-note">
+                In order to make sure your payout is processed in the shortest terms, please be sure to follow the example provided here:
+              </p>
+
+              <div class="payments__documents">
+                <div class="payments__document">
+                  <h3 class="payments__document-title">Proof of ID</h3>
+                  <p class="payments__document-description">
+                    Proof of identity (driver's license, ID, passport). Please make sure to capture both sides of the identification.
+                  </p>
+                  <div class="payments__document-examples">
+                    <div class="payments__document-example">
+                      <img src="/assets/images/documents/id-front.png" alt="ID Front" />
+                      <span>Front</span>
+                    </div>
+                    <div class="payments__document-example">
+                      <img src="/assets/images/documents/id-back.png" alt="ID Back" />
+                      <span>Back</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="payments__document">
+                  <h3 class="payments__document-title">Credit Card(s)</h3>
+                  <p class="payments__document-description">
+                    Both sides of the card(s) you have used for depositing.
+                  </p>
+                  <div class="payments__document-examples">
+                    <div class="payments__document-example">
+                      <img src="/assets/images/documents/card-front.png" alt="Card Front" />
+                      <span>Front</span>
+                    </div>
+                    <div class="payments__document-example">
+                      <img src="/assets/images/documents/card-back.png" alt="Card Back" />
+                      <span>Back</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="payments__document">
+                  <h3 class="payments__document-title">Proof of Address</h3>
+                  <p class="payments__document-description">
+                    Proof of address (utility, medical or delivery bill or any official document with your full name, address and date. Please note the document must have been issued within the recent 2 months).
+                  </p>
+                  <div class="payments__document-examples">
+                    <div class="payments__document-example">
+                      <img src="/assets/images/documents/address.png" alt="Address Proof" />
+                      <span>Example</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Important Notes Section -->
+            <div class="payments__section">
+              <h2 class="payments__section-title">Please note that:</h2>
+              <ul class="payments__notes">
+                <li>All transactions are irreversible.</li>
+                <li>Deposit and/or cashout methods may vary depending on your current location (please check their availability in the Cashier).</li>
+                <li>All transactions are made as per the exchange rate to the currency linked to your bank account or payment service used.</li>
+                <li>Red Dog Casino does not apply additional fees for your transactions and is not responsible for any fees charged by your bank or other payment service operator.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="footer-top__text" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+              <div>
+                <a href="/privacy-policy.html">Privacy policy</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Rakoo Casino</a>
+              </div>
+              <div>
+                <a href="#">Jackpot Terms and Conditions</a>
+                <a href="#">Affiliate Program</a>
+                <a href="#">Terms and Conditions</a>
+              </div>
+              <div>
+                <a href="#">Responsible Gaming</a>
+                <a href="#">Bonus Terms and Conditions</a>
+                <a href="#">Faq</a>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-centre">
+            <img src="/assets/svg/Footer/Approve/Frame-4.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-5.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-6.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-7.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-8.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-9.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-10.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-11.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-12.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-13.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-14.svg" alt="" />
+            <img src="/assets/svg/Footer/Approve/Frame-15.svg" alt="" />
+          </div>
+          <hr />
+          <div class="footer-bottom">
+            <p class="footer-bottom__left">
+              casino is owned and operated by FGS SOFTWARE SOLUTIONS S.R.L., a
+              company registered and established under the laws of Costa Rica.
+              FGS SOFTWARE SOLUTIONS S.R.L. is regulated by the Government of
+              Costa Rica. SOFTWARE SOLUTIONS S.R.L. registration number is
+              3-102-871832. ****
+            </p>
+            <div class="footer-bottom__right">
+              <img src="/assets/svg/Footer/MasterCard.svg" alt="" />
+              <img src="/assets/svg/Footer/Visa.svg" alt="" />
+              <img src="/assets/svg/Footer/GC.svg" alt="" />
+              <img src="/assets/svg/Footer/18+.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/modalCashier.js"></script>
+    <script src="/js/sliders.js"></script>
+    <script src="/js/createContainer.js"></script>
+  </body>
+</html>
