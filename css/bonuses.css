@@ -131,6 +131,85 @@
   color: #ccc;
 }
 
+/* Crypto Bonus Section */
+.bonuses__crypto {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  border: 1px solid #333;
+}
+
+.bonuses__crypto-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bonuses__crypto-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.bonuses__crypto-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  flex: 1;
+}
+
+.bonuses__crypto-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.bonuses__crypto-button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+}
+
+.bonuses__crypto-button:first-child {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.bonuses__crypto-button:first-child:hover {
+  background-color: #d62839;
+}
+
+.bonuses__crypto-button--info {
+  background-color: #333;
+  color: #fff;
+}
+
+.bonuses__crypto-button--info:hover {
+  background-color: #444;
+}
+
+.bonuses__crypto-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.bonuses__crypto-terms {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+}
+
 @media (max-width: 1024px) {
   .bonuses__types {
     grid-template-columns: 1fr;
@@ -162,5 +241,28 @@
   .bonuses__table td {
     padding: 10px;
     font-size: 14px;
+  }
+
+  .bonuses__crypto {
+    padding: 20px;
+  }
+
+  .bonuses__crypto-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .bonuses__crypto-title {
+    font-size: 24px;
+  }
+
+  .bonuses__crypto-buttons {
+    width: 100%;
+  }
+
+  .bonuses__crypto-button {
+    flex: 1;
+    justify-content: center;
   }
 }
