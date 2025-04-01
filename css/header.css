@@ -208,12 +208,11 @@
 }
 
 .dropdown-drop__item {
-	padding: 8px 16px;
-	font-size: 14px;
 	padding: 12px 12px;
+	font-size: 14px;
 	line-height: 17px;
 	font-weight: 500;
-	border-radius: 12px;
+	border-radius: 4px;
 	color: var(--white);
 	transition: 0.15s ease-in-out;
 }
