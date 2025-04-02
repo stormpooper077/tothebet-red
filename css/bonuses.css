@@ -186,7 +186,7 @@
 }
 
 .bonuses__crypto-button:first-child {
-  background-color: #e63946;
+  background: linear-gradient(90.93deg, #E30C1D 4.48%, #A30C18 96.8%);
   color: #fff;
 }
 
