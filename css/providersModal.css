@@ -141,6 +141,7 @@
 }
 
 .provider__content-left_top {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
