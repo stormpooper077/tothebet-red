@@ -133,6 +133,7 @@
 
 /* Crypto Bonus Section */
 .bonuses__crypto {
+  width: 50%;
   background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
   border-radius: 12px;
   padding: 30px;
@@ -147,6 +148,7 @@
 }
 
 .bonuses__crypto-info {
+  max-width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
