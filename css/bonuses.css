@@ -131,6 +131,12 @@
   color: #ccc;
 }
 
+.bonuses__bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
 /* Crypto Bonus Section */
 .bonuses__crypto {
   width: 580px;
